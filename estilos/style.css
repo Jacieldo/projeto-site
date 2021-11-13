@@ -7,8 +7,8 @@ body {
     background-color: rgb(80, 80, 151);
 }
 h1 {
-    font-size: 2em;
-    color: blueviolet;
+    font-size: 2.5em;
+    color: rgb(12, 15, 161);
 }
 
 h2 {
@@ -19,7 +19,7 @@ h2 {
 a {
     text-decoration: none;
     font-weight: bold;
-    color: aqua;
+    color: rgb(6, 59, 59);
 }
 img.lado {
     float: right;
