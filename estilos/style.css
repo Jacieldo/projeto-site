@@ -6,7 +6,29 @@
 body {
     background-color: rgb(80, 80, 151);
 }
+h1 {
+    font-size: 2em;
+    color: blueviolet;
+}
 
+h2 {
+    font-size: 1.5em;
+    color: brown;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: aqua;
+}
+img.lado {
+    float: right;
+}
+
+a:houver {
+    text-decoration: underline;
+    color: blue;
+}
 main {
     background-color: white;
     width: 500px;
