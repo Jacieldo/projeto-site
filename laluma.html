@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando o Site</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <script language="javascript"> 
+        function setCookie(nome, valor, dias){ 
+        diasms = (new Date()) .getTime() + 1000 * 3600 * 24 * dias; 
+        dias = new Date(diasms); 
+        expires = dias.toGMTString(); 
+        document.cookie = escape(nome) + "=" + escape(valor) + "; expires=" + expires; 
+        } 
+        </script>
+</head>
+<body>
+    <main>
+        <header>
+            <article>
+                <h1>Oi Lumita</h1>
+                <p>É desnecessário fazer isso e eu sei, fora que bem mais trabalhoso, mas prazer, eu sou o Jacieldo.</p>
+                <p>Não importa é? Pra mim seria muito trabalho (não só isso aqui) pra algo tão sem importancia (pena que aqui eu não sei usar a carinha que tu não gosta)</p>
+                <p>Apesar da treta nas ultimas horas, a minha vontade é de chegar em ti e te beijar. Mas enfim. Curte ai esse som:</p>
+                
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/X33aqdYUAQM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <h5>Observação 1:</h5><p>A página não está configurada para celular, então pode dar algum erro</p>
+                <h5>Observação 2:</h5><p>Eu não faço revisão do texto, então pode passar varios absurdos ortograficos!</p>
+
+            </article>
+            
+            
+        </header>
+        <article>
+            
+        </article>
+        
+    </main>
+    <script language="javascript">
+        if (!document.cookie){
+        setCookie("cookie", "1", 365);
+        document.write("<font face='verdana' size='1'>Suas Visitas : 1</font>");
+        } else {
+        var cont = document.cookie;
+        var dividindo = cont.split("=");
+        //document.write(dividindo[1]);
+        var numero = parseInt(dividindo[1]);
+        var soma = numero + 1;
+        document.write("<font face='verdana' size='1'>Suas Visitas : " + soma + "</font>");
+        setCookie("cookie", soma, 365);
+        }
+        </script> 
+    
+</body>
+</html>
