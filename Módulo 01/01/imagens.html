@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregando Imagens</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Abra esta página em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu nagegador.</p>
+
+    <picture> <!--Taxa de regeição do google - BOUCE RATE. Imagens com rolagem são muito rejeitadas pelos usuários e eles saem do site e o google analisa isso-->
+        <!--Trabalhando as imagens de acordo com o tamanho da tela do usuário-->
+        <source media="(max-width: 750px)" srcset="imagens/android-chrome-192x192.png" type="image/png">
+        <source media="(max-width: 1050px")  srcset="imagens/android-chrome-512x512.png" type="image/png" > <!-- 50px é considerando a barra de rolagem. Se não, seria com 1000px -->
+        <img src="imagens/20210222_210519 .png" alt="Imagem Flexível">
+
+    </picture>
+    
+</body>
+</html>
