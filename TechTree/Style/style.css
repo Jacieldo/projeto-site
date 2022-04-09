@@ -3,14 +3,14 @@ h1 {
     font-family: 'Oooh Baby', sans-serif;
     color: #3298e2;
     text-align: center;
-    text-shadow: 2px 2px 2px rgba(20, 63, 94, 0.774);
+    text-shadow: 4px 3px 8px rgba(20, 63, 94, 0.774);
 }
 
 p {
     text-align: center;
     color: rgb(238, 8, 8);
     font-family: 'Oooh Baby', sans-serif;    
-    text-shadow: 3px 3px 3px rgba(248, 246, 246, 0.774);    
+    text-shadow: 3px 3px 1.5px rgba(248, 246, 246, 0.774);    
 }
 
 .container1 {
@@ -25,31 +25,31 @@ p {
         border-color: black;
         width: 200px;
         height: 200px;
-        background: #003EBB
+        background: #000022
     }
     .box12 {
         border-color: black;
         width: 200px;
         height: 200px;
-        background: #00487C    
+        background: #001242
         }
     .box13 {
         border-color: black;
         width: 200px;
         height: 200px;
-        background: #5FBFF9
+        background: #0094c6
         }
     .box14 {
         border-color: black;
         width: 200px;
         height: 200px;
-        background: #BAFFDF
+        background: #fcfafa
         }
     .box15 {
         border-color: black;
         width: 200px;
         height: 200px;
-        background: #F9E0D9
+        background: #dfbbb1
         }
 
 
@@ -131,10 +131,6 @@ p {
         height: 200px;
         background: #f9e0d9
         }
-
-
-
-
 
 
 
