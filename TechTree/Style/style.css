@@ -1,4 +1,17 @@
 @charset "UTF-8";
+.topFlag { 
+    width: 100%;
+    height: 80px;
+
+    background: linear-gradient(45deg, #00001a 60%, #df5bcd 90%, #0094c6 100%, #dfbbb1 98%, #fcfafa 98%);
+    background-attachment: scroll; 
+   
+}
+
+img {
+    text-align: center;
+}
+
 h1 {    
     font-family: 'Oooh Baby', sans-serif;
     color: #3298e2;
@@ -19,7 +32,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
 }
     .box11 {
         border-color: black;
