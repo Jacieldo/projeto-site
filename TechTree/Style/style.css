@@ -7,10 +7,27 @@
     background-attachment: scroll; 
    
 }
-
-img {
-    text-align: center;
+.topFlag2 {
+    width: auto;
+    height: 80px;
+    background: linear-gradient(to right, #00001a, #df5bcd, #0094c6, #00001a);
+    background-size: 400% 400%;
+    animation: topFlag2 10s infinite ease-in-out;
 }
+@keyframes topFlag2 {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 10%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+    
+}
+
+
 
 h1 {    
     font-family: 'Oooh Baby', sans-serif;
