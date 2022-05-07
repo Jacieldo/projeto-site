@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classe</title>
+    <style>
+
+        /*          SELETORES PERSONALIZADOS
+            #  = id
+            .  = classe
+            :  = pseudo-classe
+            :: = Pseudo-elemnt
+            >  = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: rgb(42, 116, 165);
+        }
+        a:hover {
+           color: rgba(78, 37, 226, 0.411); 
+        }
+        a:active {
+            color: aqua;
+        }
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div:hover {
+            background-color: red;  
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <p>O "HOVER é uma pseudo-classe que faz essa iteração de passaro mouse e ter uma mudança</p>
+
+    <h2>Links</h2>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Jacieldo" target="_blank">Meu Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCp0Rxrx1pOkgPE4RlOrML8g/featured">Meu Canal no YouTube</a></li>
+        <li><a href="https://jacieldo.github.io/projeto-site/TechTree/Index.html">Meu Site</a></li>
+    </ul>
+
+    
+</body>
+</html>
