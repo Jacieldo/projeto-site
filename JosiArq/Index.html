@@ -9,11 +9,76 @@
     
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Notícias</a>
-        <a href="#">Curiosidades</a>
-        <a href="#">Fale Conosco</a>
-    </nav>
+    <header>
+        <nav class="menu">
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">Notícias</a>
+                <a href="#">Curiosidades</a>
+                <a href="#">Fale Conosco</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="div-slider"> 
+            <ul class="slides-front">
+              <input type="radio" name="radio-btn" id="img-1" checked="">
+              <li class="slide-container">
+              <div class="slide">
+                <img src="imagens/04.png">
+                  </div>
+              </li>
+          
+              <input type="radio" name="radio-btn" id="img-2">
+              <li class="slide-container">
+                  <div class="slide">
+                    <img src="imagens/02.png">
+                  </div>
+              </li>
+          
+              <input type="radio" name="radio-btn" id="img-3">
+              <li class="slide-container">
+                  <div class="slide">
+                    <img src="imagens/03.png">
+                  </div>
+              </li>
+          
+              <li class="nav-dots">
+                <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+              </li>
+            </ul>
+          </div>
+    
+
+    </main>
+
+
+    
+    
+      
+
+
+
+
+
+
+
+    <div id="slider">
+        <img class="selected" src="imagens/01.png" alt="">
+        <img src="imagens/02.png" alt="">
+        <img src="imagens/03.png" alt="">
+        <img src="imagens/04.png" alt="">
+        <img src="imagens/05.png" alt="">             
+    </div>
+
+         <script src="script.js"></script>
+
+
+
+    <footer>
+        <p>Site criado por <a href="https://github.com/Jacieldo" target="_blank">Jacieldo Gonçalves</a></p>
+    </footer> 
 </body>
 </html>

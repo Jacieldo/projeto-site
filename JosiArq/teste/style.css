@@ -78,9 +78,25 @@ header a {
     width: 100%;
     height: 100%;
 }
-
-.slide:hover  { opacity: 0.5; }
-
+.nav label {
+    width: 150px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+} 
+.slide:hover + .nav label { opacity: 0.5; }
+.nav label:hover { opacity: 1; }
+.nav .next { right: 0; }
 input:checked + .slide-container  .slide {
     opacity: 1;
     transform: scale(1);
@@ -136,30 +152,3 @@ input#img-3:checked ~ .nav-dots label#img-dot-3 {
 #slider img.selected {
     opacity: 1;
 } 
-
-
-
-
-
-
-
-
-
-
-footer {
-    background-color: #c18159c0;;
-    color: white;
-    text-align: center;
-    font-size: .8em;
-    padding: 5px;
-}
-
-footer a {
-    text-decoration: none ;
-    color: white;
-    font-weight: bolder;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
