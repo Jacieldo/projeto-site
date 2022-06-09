@@ -1,42 +1,62 @@
-#checkbox {
-    display: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.hamburguer {
-    position: relative;
-    padding: 20px;
+html, body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 
-.line {
+#checkbox-menu {
     position: absolute;
-    width: 21px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 3px;
-    transition: transform .25s, opacity .35s;
-}
-
-.line--top {
-    transform: translateY(-7px);
-}
-
-.line--bottom {
-    transform: translateY(7px);
-}
-
-#checkbox:checked~.line--top {
-    transform: rotate(45deg);
-}
-
-#checkbox:checked~.line--middle {
-    transform: translateX(16px);
     opacity: 0;
 }
 
-#checkbox:checked~.line--bottom {
+label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+label span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #f16234;
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+    top: 0;
+}
+label span:nth-child(2) {
+    top: 8px;
+}
+label span:nth-child(3) {
+    top: 16px;
+}
+
+#checkbox-menu:checked +label span:nth-child(1) {
     transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked +label span:nth-child(2) {
+    opacity: 0;
+}
+#checkbox-menu:checked +label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
 }
