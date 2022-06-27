@@ -3,139 +3,129 @@
     margin: 0; padding: 0; box-sizing: border-box;
 }
 
-.center{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2%;
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-header {
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24 px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
     z-index: 10;
     position: fixed;
-    left: 0;
-    top: 0;
-    height: 60px;
+    display: flex;
     width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    background-color: #c1815960;
-    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.514);  
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #c1815960;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.514);
+    height: 10vh;
 }
 
-header ul {
-    text-align: right;
-    padding:15px 20px;
-}
-header li {
-    display: inline-block;
-    margin: 0 10px;
-}
-header a {
-    text-decoration: none;
-    color: white;    
-    padding: 10px;
-    border-radius: 3px;
-
+.nav-list {
+    list-style: none;
+    display: flex;
 }
 
-
-
-
-.div-slider{
-    width: auto;
-    height: 2000px;
-    text-align: center;
-    }
-.slides-front {  
-    padding: 0;  
-    width: 980px;
-    height: 370px;
-    display: block;
-    margin: auto;    
-
-}
-.slides-front * {
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-}
-.slides-front input { display: none; } /*Colou a imagem no topo */
-.slide-container { display: block; } /*Tira os pontos pretos */
-.slide { /*Não mostra a lista de fotos do Slide */
-    top: 0;
-    opacity: 0; /*Torna as fotos da listas totalmente opacas, invisíveis */
-    width: 980px;
-    height: 370px;
-    display: block;
-    position: absolute;
-    transform: scale(0);
-    transition: all .7s ease-in-out 0.1s;
-}
-.slide img {
-    width: 100%;
-    height: 100%;
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
 }
 
-.slide:hover  { opacity: 0.5; }
-
-input:checked + .slide-container  .slide {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 1s ease-in-out 0.1s;
-} 
-
-.nav-dots {
-    width: 100%;
-    bottom: 9px;
-    height: 11px;
-    display: block;
-    position: relative;
-    text-align: center;
-} 
-.nav-dots .nav-dot { /*Botões debaixo das fotos */
-    top: 375px;
-    width: 11px;
-    height: 11px;
-    margin: 0 4px;
-    position: relative;
-    border-radius: 100%;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.6);
-} 
-.nav-dots .nav-dot:hover {
+.mobile-menu {
+    display: none;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.8);
-} 
+}
 
-input#img-1:checked ~ .nav-dots label#img-dot-1,
-input#img-2:checked ~ .nav-dots label#img-dot-2,
-input#img-3:checked ~ .nav-dots label#img-dot-3 {
-    background: rgba(0, 0, 0, 0.8);
-} 
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;    
+    transition: 0.3s;
+}
 
-#slider {
-    width: 80%;
-    max-width: 500px;
-    height: 25vw;
-    max-height: 150px;
-    position: sticky;    
-} 
+@media (max-width: 999px) {
+    body {
+        overflow-x:hidden ;    
+    }
+    .nav-list {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 40vw; /**O tamanho do menu lateral que aparece **/
+        height: 90vh; /** Completa com os 10vh do menu **/
+        background: #c1815960;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
 
-#slider img {
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
     opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 800ms;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px); 
+}
+
+
+
+
+
+
+main {
+    background: url("../imagens/Photo7.jpg") no-repeat center center;
+    background-size: cover; /* PESQUISAR COMO FUNCIONA*/
+    height: 100vh;
 } 
 
-#slider img.selected {
-    opacity: 1;
-} 
+
+
+
+
+
 
 
 
