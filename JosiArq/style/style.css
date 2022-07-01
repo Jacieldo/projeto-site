@@ -18,6 +18,11 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
+header {
+    background: url("../imagens/Photo7.jpg") no-repeat center center;
+    background-size: cover; /* PESQUISAR COMO FUNCIONA*/
+    height: 100vh;
+}
 
 nav {
     z-index: 10;
@@ -115,11 +120,10 @@ nav {
 
 
 
-main {
-    background: url("../imagens/Photo7.jpg") no-repeat center center;
-    background-size: cover; /* PESQUISAR COMO FUNCIONA*/
-    height: 100vh;
-} 
+
+
+
+
 
 
 
