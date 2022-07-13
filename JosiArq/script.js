@@ -48,7 +48,7 @@ class MobileNavbar {
   
 
 
-  let time = 2000,
+  let time = 5000,
     currentImageIndex = 0,
     images = document.querySelectorAll("#slider img")
     max = images.length;
