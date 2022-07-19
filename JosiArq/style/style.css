@@ -3,6 +3,12 @@
     margin: 0; padding: 0; box-sizing: border-box;
 }
 
+:root {
+    --cor0: #0f3f8b;
+    --cor1: #c1815960;
+    --fonte-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -13,8 +19,22 @@ a:hover {
     opacity: 0.7;
 }
 
+nav {
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 13vh;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--fonte-padrao);
+    background: var(--cor1);
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.514);    
+    padding-right: 5vw;
+}
+
 .logo {
-    font-size: 24px;
+    display: flex;
     text-transform: uppercase;
     letter-spacing: 4px;
     height: 11vh; 
@@ -25,26 +45,18 @@ a:hover {
     height: 100%;
     object-fit:scale-down;
     border: none;
-    margin-left: 60px;
+    margin-left: 3vw;
 }
 
-nav {
-    z-index: 10;
-    position: fixed;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #c1815960;
-    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.514);
-    height: 13vh;
-
+.logo-list {
+    list-style: none;
+    color: #fff;
+    margin-left: 10px;
 }
 
 .nav-list {
     list-style: none;
-    display: flex;
-   
+    display: flex;     
 }
 
 .nav-list li {
@@ -63,6 +75,7 @@ nav {
     background-color: #fff;
     margin: 8px;    
     transition: 0.3s;
+    margin-right: 8vw;
 }
 
 @media (max-width: 999px) {
@@ -74,8 +87,8 @@ nav {
         top: 13vh;
         right: 0;
         width: 40vw; /**O tamanho do menu lateral que aparece **/
-        height: 90vh; /** Completa com os 10vh do menu **/
-        background: #c1815960;
+        height: 87vh; /** Completa com os 10vh do menu **/
+        background: var(--cor1);
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -138,6 +151,43 @@ nav {
     opacity: 1;
 }
 
+.circle-image {
+    margin-left: 15vw;
+    margin-top: 15vh;
+    display: inline-block;    
+    height: 350px;
+    width: 350px;
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    }
+
+main {
+    padding: 20px;
+    min-width: 300px;    
+    margin: auto;
+}
+
+main h1 {
+    color: var(--cor0);
+    font-size: 1.8em;
+    font-family: var(--fonte-padrao);
+    
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+
 
 
 
@@ -164,7 +214,7 @@ nav {
 
 
 footer {
-    background-color: #c18159c0;;
+    background-color: #c18159c0;
     color: white;
     text-align: center;
     font-size: .8em;

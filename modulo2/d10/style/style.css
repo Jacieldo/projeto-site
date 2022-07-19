@@ -8,7 +8,6 @@
     font-weight: normal;
 }
 
-
 :root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
@@ -16,11 +15,11 @@
     --cor3: #2fa866;
     --cor4: #1a5c37;
     --cor5: #063d1e;
-
     --fonte-padrao: Arial, Verdana, helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
     --fonte-android: 'Android', cursive;
 }
+
 * {
     margin: 0px;
     padding: 0px;
@@ -68,8 +67,7 @@ header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
     font-weight: normal;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;    
 }
 
 header p {
@@ -137,7 +135,6 @@ div.video > iframe {
     left: 5%;
     width: 90%;
     height: 90%;
-
 }
 
 main h2 {
@@ -146,7 +143,6 @@ main h2 {
     font-size: 1.3em;
     font-weight: normal;
     background-image: linear-gradient(to right, var(--cor1), transparent);
-
 }
 
 main img {
@@ -177,8 +173,6 @@ aside > h3 {
     padding: 5px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
-
-
 }
 
 footer {
