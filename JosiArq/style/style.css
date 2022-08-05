@@ -3,13 +3,17 @@
     margin: 0; padding: 0; box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+@font-face {
+    font-family: 'DK';
+    src: url(../font/DK\ Semarang.otf) format('opentype');
+}
 
 :root {
     --cor0: #0f3f8b;
     --cor1: #c1815960;
+    --cor2: #c18159d2;
     --fonte-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --fonte-destaque: 'Oooh Baby', cursive;
+    --fonte-destaque: 'DK', Roboto, -apple-system, sans-serif;
 }
 body {
     min-height: 540px;
@@ -23,10 +27,11 @@ a {
 
 a:hover {
     opacity: 0.7;
+    color: var(--cor0)
 }
 
 nav {
-    z-index: 10;
+    z-index: 5;
     position: fixed;
     display: flex;
     width: 100%;
@@ -52,7 +57,7 @@ nav {
     height: 100%;
     object-fit:scale-down;
     border: none;
-    margin-left: 2.5vw;
+    margin-left: 15px;
 }
 
 .logo-list li{
@@ -94,27 +99,62 @@ nav {
         overflow-x:hidden ;          
     }
     .mobile-menu {
-        display: block;      
+        display: block;   
+        z-index: 8;   
     } 
+
     .nav-list {
-        top: 13vh;
+        z-index: 7; 
+        top: 0;
         position: absolute;
         right: 0;
         width: 40vw; /**O tamanho do menu lateral que aparece **/
-        height: 87vh; /** Completa com os 13vh do menu **/
-        min-height: 250px;
-        background: var(--cor1);
+        height: 100vh; /** Completa com os 13vh do menu **/
+        background: var(--cor1);               
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        display: flex;
         transform: translateX(100%);
-        transition: transform 0.3s ease-in;
+        transition: transform 0.3s ease-in;      
     }
 
     .nav-list li {
+        position: relative;
         margin-left: 0;
         opacity: 0;
+        margin: 0;
+        width: 40vw;
+        height: 21.75vh;
+        text-align: center;
+        padding: auto;
     }
+
+    .nav-list li:hover {
+        background-color: var(--cor2);
+    }
+
+    .nav-list li a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
+    }    
+
+    .nav-list li.topo {
+        display: block;
+        z-index: 6;
+        justify-content: none;
+        align-items: center;
+        width: 40vw; 
+        height: 13vh;       
+        min-height: 70px;         
+    }
+
+    .nav-list li.topo:hover {
+        background-color: #cebaae00;
+    }
+
 }
 
 .nav-list.active {
@@ -209,6 +249,7 @@ main {
 .cosmos-sobre-nome {
     color: var(--cor0);
     font-family: var(--fonte-destaque);
+    font-weight: lighter;
     
 }
 
