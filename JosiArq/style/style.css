@@ -225,7 +225,7 @@ main {
 }
 
 .cosmos-sobre {
-    display: flex;
+    display: inherit;
     -webkit-box-align: center;
     -webkit-box-pack: center;
     align-items: center;
