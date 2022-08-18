@@ -5,8 +5,12 @@
 
 @font-face {
     font-family: 'DK';
-    src: url(../font/DK\ Semarang.otf) format('opentype');
+    src: url(../font/DK\ Semarang.otf) format('opentype');    
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
+  
 
 :root {
     --cor0: #0f3f8b;
@@ -14,6 +18,7 @@
     --cor2: #c18159d2;
     --fonte-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --fonte-destaque: 'DK', Roboto, -apple-system, sans-serif;
+    --font-texto: 'Source Sans Pro', sans-serif;
 }
 body {
     min-height: 540px;
@@ -154,6 +159,11 @@ nav {
         background-color: #cebaae00;
     }
 
+    article {
+        min-width: 270px;
+        max-width: 900px;
+    }
+
     .cosmos-sobre-img img {
         height: 250px;
         width: 250px;
@@ -229,7 +239,7 @@ nav {
 
 main {
     z-index: 10;
-    background-color: #fff;
+    background-color: #f7f7f7;;
     width: 100vw;
     padding-top: 40px;
     margin-left: auto;
@@ -245,9 +255,18 @@ main p {
     line-height: 1.5em;
 }
 
+article {
+    max-width: 1000px;
+    min-width: 300px;
+    width: 95vw; 
+    
+    margin-left: auto;
+    margin-right: auto;  
+}
+
 .cosmos-sobre {
     z-index: 10;
-    max-width: 1100px;
+    max-width: 1000px;
     min-width: 300px;
     width: 95vw;   
     height: 500px;
@@ -255,7 +274,7 @@ main p {
 }
 
 .cosmos-sobre-img img{
-    border-radius: 50%;    
+    border-radius: 50%;      
 }
 
 .cosmos-sobre-nome {
@@ -277,13 +296,32 @@ main p {
         justify-content: space-between;                     
     }
 
-    .cosmos-sobre-txt {    
-        max-width: 600px;
+    .cosmos-sobre-txt {   
+        margin-left: 60px;
+        max-width: 650px;
         min-width: 280px;     
         float: left;
         display: inline-block;
         justify-content: space-between;
+        width: 500px;
+        font-family: var(--font-texto);
+        font-size: 20px;
+        color: #545454;
     }
+}
+
+.cosmos-projects {
+    width: 100vw;
+    height: 130px;
+    text-align: center;
+    background-color: #373435;
+    color: #fff;
+    font-family: var(--fonte-padrao);
+    font-size: 60px;
+}
+
+.cosmos-projects p {
+    text-align: center;    
 }
 
 
@@ -307,11 +345,12 @@ main p {
 
 
 footer {
-    background-color: #c18159c0;
+    background-color: var(--cor0);
     color: white;
     text-align: center;
     font-size: .8em;
-    padding: 5px;
+    width: 100vw;
+    height: 100px;
 }
 
 footer a {
