@@ -55,6 +55,7 @@ nav {
     text-transform: uppercase;
     letter-spacing: 4px;
     height: 70px;
+    border: #8b0f6c 1px solid;
 }
 
 .logo img{
@@ -63,9 +64,11 @@ nav {
     object-fit:scale-down;
     border: none;
     margin-left: 15px;
+    border: #0f3f8b 1px solid;
 }
 
 .logo-list li{
+    border: #373435 1px solid;
     letter-spacing: 1px;
     list-style: none;
     color: #fff;
@@ -183,6 +186,44 @@ nav {
         display: inline-block;
         justify-content: space-between;
     }
+
+    
+    .cosmos-projects-01 {
+        
+        display: inline-block;
+        height: 500px;
+        width: 80vw;
+        border: solid 1px #fff;
+    }
+
+    .cosmos-projects {
+        text-align: center;
+        margin: 30px;
+        padding: 15px;
+    }
+    
+    .cosmos-projects-02 {
+        display: inline-block;
+        height: 500px;
+        width: 90vw;
+        border: solid 1px #fff;
+    }
+    
+    .cosmos-projects-01 img {
+        width: 100%;
+        height: 100%;
+        height: 500px;
+    }
+    
+    .cosmos-projects-02 img {
+        width: 100%;
+        height: 100%;
+        height: 500px;
+    }
+
+    .cosmos-projects p {      
+        margin: auto; 
+    }
     
 }
 
@@ -220,9 +261,8 @@ nav {
 }
 
 #slider img {
-    z-index: -2;
-    opacity: 0;
-    position: fixed;
+    opacity: 1;
+    position: absolute;
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -232,13 +272,7 @@ nav {
     transition: 0.9s ease-in;
 }
 
-#slider img.selected {
-    z-index: -2;
-    opacity: 1;
-}
-
-main {
-    z-index: 10;
+main {   
     background-color: #f7f7f7;;
     width: 100vw;
     padding-top: 40px;
@@ -258,8 +292,7 @@ main p {
 article {
     max-width: 1000px;
     min-width: 300px;
-    width: 95vw; 
-    
+    width: 95vw;     
     margin-left: auto;
     margin-right: auto;  
 }
@@ -308,11 +341,20 @@ article {
         font-size: 20px;
         color: #545454;
     }
+
+    .cosmos-projects-01 img {
+        width: 47.5vw;
+        height: 100%;
+    }
+    
+    .cosmos-projects-02 img {
+        width: 47.5vw;
+        height: 100%;
+    }
 }
 
-.cosmos-projects {
+.cosmos-projects {    
     width: 100vw;
-    height: 130px;
     text-align: center;
     background-color: #373435;
     color: #fff;
@@ -320,8 +362,19 @@ article {
     font-size: 60px;
 }
 
-.cosmos-projects p {
-    text-align: center;    
+.cosmos-projects-01 {
+    display: inline-block;
+    border: solid 1px #fff;
+}
+
+.cosmos-projects-02 {
+    display: inline-block;
+    border: solid 1px #fff;
+}
+
+.cosmos-projects p {     
+    text-align: center;
+    
 }
 
 
