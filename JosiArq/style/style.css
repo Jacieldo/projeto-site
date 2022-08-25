@@ -167,6 +167,16 @@ nav {
         max-width: 900px;
     }
 
+
+
+
+
+
+
+
+
+    
+
     .cosmos-sobre-img img {
         height: 250px;
         width: 250px;
@@ -188,12 +198,10 @@ nav {
     }
 
     .cosmos-projects {
-        text-align: center;
-        
+        text-align: center;        
     }
     
-    .cosmos-projects-01 {
-        
+    .cosmos-projects-01 {        
         display: inline-block;
         height: 500px;
         width: 90vw;
@@ -308,6 +316,22 @@ article {
     border-radius: 50%;      
 }
 
+
+
+
+.lista-teste {
+    background-color: #8b0f6c;
+    width: 100vw;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
 .cosmos-sobre-nome {
     color: var(--cor0);
     font-family: var(--fonte-destaque);
@@ -362,18 +386,15 @@ article {
 }
 
 .cosmos-projects-01 {
-    display: inline-block;
-    
+    display: inline-block;    
 }
 
 .cosmos-projects-02 {
-    display: inline-block;
-    
+    display: inline-block;    
 }
 
 .cosmos-projects p {     
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .cosmos-contacts {
@@ -383,8 +404,8 @@ article {
     color: #373435;
     font-family: var(--fonte-padrao);
     font-size: 60px;
+} 
 
-}
 .cosmos-contacts p {     
     text-align: center;
     
@@ -432,7 +453,7 @@ footer a:hover {
     display: flex;
     margin: auto;    
     height: 50px;
-    width: 80px;
+    width: 120px;
 }
 
 .cosmos-footer img {   
