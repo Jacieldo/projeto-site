@@ -55,7 +55,6 @@ nav {
     text-transform: uppercase;
     letter-spacing: 4px;
     height: 70px;
-    border: #8b0f6c 1px solid;
 }
 
 .logo img{
@@ -64,11 +63,9 @@ nav {
     object-fit:scale-down;
     border: none;
     margin-left: 15px;
-    border: #0f3f8b 1px solid;
 }
 
 .logo-list li{
-    border: #373435 1px solid;
     letter-spacing: 1px;
     list-style: none;
     color: #fff;
@@ -165,22 +162,20 @@ nav {
     article {
         min-width: 270px;
         max-width: 900px;
-    }
-
-
-
-
-
-
-
-
-
-    
+    }    
 
     .cosmos-sobre-img img {
         height: 250px;
         width: 250px;
     }    
+
+    .cosmos-sobre-img div {
+        width: 100px;
+        height: 8px;
+        background-color: var(--cor0);
+        margin: 5px 0;   
+        float: right; 
+    }
 
     .cosmos-sobre-img {
         display: flex;
@@ -313,17 +308,19 @@ article {
 }
 
 .cosmos-sobre-img img{
-    border-radius: 50%;      
+    border-radius: 50%; 
+    margin-top: -104px;     
+}
+
+.cosmos-sobre-img div {
+    width: 150px;
+    height: 10px;
+    background-color: var(--cor2);
+    margin: 8px 0;   
+    float: right; 
 }
 
 
-
-
-.lista-teste {
-    background-color: #8b0f6c;
-    width: 100vw;
-    height: 100px;
-}
 
 
 
@@ -343,7 +340,7 @@ article {
 
 @media (min-width: 1000px) {
     .cosmos-sobre-img { 
-        border: #0f3f8b 1px solid;
+        border: #fff  solid;
         margin-right: 1em;     
         height: 300px; 
         width: 300px;
