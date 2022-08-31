@@ -362,15 +362,7 @@ article {
         color: #545454;
     }
 
-    .cosmos-projects-01 img {
-        width: 47.5vw;
-        height: 100%;
-    }
-    
-    .cosmos-projects-02 img {
-        width: 47.5vw;
-        height: 100%;
-    }
+  
 }
 
 .cosmos-projects {    
@@ -389,6 +381,44 @@ article {
 .cosmos-projects-02 {
     display: inline-block;    
 }
+
+.galery {
+    width: 640px;
+    height: 360px;
+    background-color: rgb(231, 8, 231);
+    overflow: hidden;
+}
+
+.galery .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+    width: 19.9%;
+}
+
+
+
+.galeryy {
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+}
+.galeryy .fotos {
+    width: 300%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.galeryy .fotos img {
+    width: 29.9%;
+}
+
+
+
 
 .cosmos-projects p {     
     text-align: center;    
