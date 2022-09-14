@@ -220,6 +220,7 @@ nav {
         width: 100%;
         height: 100%;
         height: 500px;
+        object-fit: cover;
     }
 
     .cosmos-projects p {      
@@ -374,48 +375,39 @@ article {
     font-size: 60px;
 }
 
-.cosmos-projects-01 {
-    display: inline-block;    
+#cosmos-projects-img{
+    width: 100%;
+    margin: auto;
 }
 
-.cosmos-projects-02 {
-    display: inline-block;    
+#items {
+    display: flex;
+    overflow-x: auto; /* Scroll nas imagens */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+
 }
 
-.galery {
-    width: 640px;
-    height: 360px;
-    background-color: rgb(231, 8, 231);
-    overflow: hidden;
+.item {
+    flex: none;
+    width: 50%; 
+    height: 400px;
+    scroll-snap-align: start;
+    pointer-events: none;
+    border: 15px solid #0f3f8b00;
 }
 
-.galery .fotos {
-    width: 500%;
-    animation-name: animacao;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
-
-.galery .fotos img {
-    width: 19.9%;
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
 
-.galeryy {
-    width: 640px;
-    height: 360px;
-    overflow: hidden;
-}
-.galeryy .fotos {
-    width: 300%;
-    animation-name: animacao;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
-.galeryy .fotos img {
-    width: 29.9%;
-}
+
+
 
 
 
