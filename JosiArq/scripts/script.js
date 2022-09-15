@@ -48,26 +48,28 @@ mobileNavbar.init();
 
 
 
-let time = 5000,
-  currentImageIndex = 0,
-  images = document.querySelectorAll("#slider img")
+/* RODANDO AS IMAGENS INICIAIS */
+let time = 6000, 
+  currentImageIndex = 0, 
+  images = document
+      .querySelectorAll("#slider img")
   max = images.length;
 
-function nextImage() {
-images[currentImageIndex].classList.remove("selected")
-currentImageIndex++
+function nextImagem() {
+  images[currentImageIndex].classList.remove("selected")
 
-if(currentImageIndex >= max)
-  currentImageIndex = 0
+  currentImageIndex++
 
-images[currentImageIndex].classList.add("selected")
+  if(currentImageIndex >= max)
+    currentImageIndex = 0
+  images[currentImageIndex].classList.add("selected")
 }
 
 function start() {
-setInterval(() => {
-  //Troca de imagem
-  nextImage()
-}, time)
+  setInterval(() => {
+    //lógica de troca de imagem 
+    nextImagem()
+  }, time)
 }
 
 window.addEventListener("load", start)

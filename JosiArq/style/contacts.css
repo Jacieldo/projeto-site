@@ -1,0 +1,19 @@
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    z-index: 6;
+}
+
+nav {
+    position: absolute;
+    height: 180px;
+    background-color: #c18159e0;;
+}
+
+main {
+    height: 1200px;
+    width: 800px;
+    z-index: 6;
+    padding-top: 180px;
+}
