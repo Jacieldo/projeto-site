@@ -303,26 +303,53 @@ article {
 }
 
 .cosmos-sobre {
-    z-index: 10;
+   
     max-width: 1000px;
     min-width: 300px;
     width: 95vw;   
     height: 500px;
     margin: 8em auto;
+   
 }
 
-.cosmos-sobre-img img{
-    border-radius: 50%; 
-    margin-top: -104px;     
+.line1 {
+    width: 180px;
+    height: 180px;
+    background-color: var(--cor0); 
+    float: right;     
+    margin-top: 100px;
+    border-radius: 50%;     
 }
 
-.cosmos-sobre-img div {
-    width: 150px;
-    height: 10px;
-    background-color: var(--cor2);
-    margin: 8px 0;   
-    float: right; 
+.line2 {       
+    margin-top: -350px;
+    margin-left: 60px;
+    float: left; 
+    margin-top: -100px;    
 }
+
+.cosmos-sobre-img1 {
+    border-radius: 50%;  
+    height: 300px; 
+    width: 300px;   
+    border: 2px solid #fff; 
+}
+
+.line3 {
+    width: 130px;
+    height: 130px;
+    background-color: #c18159;;    
+    margin-top: -320px;
+    margin-left: 20px;
+    float: left; 
+    border-radius: 50%;   
+    border: 2px solid #fff;
+}
+
+
+
+
+
 
 .cosmos-sobre-nome {
     color: var(--cor0);
@@ -331,6 +358,7 @@ article {
     text-align: center;
     margin: 20px;
     text-shadow: 3px 3px 4px rgba(6, 24, 37, 0.774);
+    
 }
 
 @media (min-width: 1000px) {

@@ -37,9 +37,7 @@ nav {
     padding-top: 230px;
     text-align: center;
     margin-left: auto;
-    margin-right: auto;
-    border: #0f3f8b solid 1px;
-    
+    margin-right: auto;    
 }
 
 .nav-list {
@@ -60,20 +58,31 @@ nav {
     color: var(--cor3);
 }
 
-.contacts1 {
+.cont1{
     display: flex;
-    width: 39vw;
-    height: 200px;
-    display: inline-block;
-    border: solid 1px #0f3f8b;
+    text-align: left;
+    font-family: var(--fonte-padrao);
+    color: var(--cor3);
+}
+
+.txt1 {
+    border: #0f3f8b solid 1px;
+    text-align: left;
+}
+.contacts1 {
+    font-size: 20px;
+    line-height: 2.5em;
+    width: 35vw;
+    height: 200px;    
+    margin: 10px; 
+    border: #0f3f8b 1px solid;
 }
 
 
-.contacts2 {
-    display: flex;
-    width: 50vw;
+.contacts2 {    
+    width: 49vw;
     height: 200px;
-    display: inline-block;
+    margin: 10px;    
     border: solid 1px #0f3f8b;
 }
 
