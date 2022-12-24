@@ -317,7 +317,7 @@ article {
     height: 180px;
     background-color: var(--cor0); 
     float: right;     
-    margin-top: 100px;
+    margin-top: 20px;
     border-radius: 50%;     
 }
 
@@ -339,10 +339,10 @@ article {
     width: 130px;
     height: 130px;
     background-color: #c18159;;    
-    margin-top: -320px;
+    margin-top: -120px;
     margin-left: 20px;
     float: left; 
-    border-radius: 50%;   
+     
     border: 2px solid #fff;
 }
 
