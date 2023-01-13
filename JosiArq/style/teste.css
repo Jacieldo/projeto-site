@@ -192,7 +192,6 @@ nav {
         justify-content: space-between;
     }
 
-
     .cosmos-projects {
         text-align: center;        
     }
@@ -291,6 +290,7 @@ main p {
     margin: 15px 0px;
     text-align: justify;
     text-indent: 30px;
+    font-size: 1.1em;
     line-height: 1.5em;
 }
 
@@ -302,69 +302,63 @@ article {
     margin-right: auto;  
 }
 
-.cosmos-sobre {   
-    max-width: 1100px;
+.cosmos-sobre {
+   
+    max-width: 1000px;
     min-width: 300px;
     width: 95vw;   
-    height: 880px;
-    margin: 3em auto;   
+    height: 500px;
+    margin: 8em auto;
+   
 }
 
-.cosmos-sobre-img { 
-    background-color: #8b0f0f;
+.line1 {
+    width: 180px;
+    height: 180px;
+    background-color: var(--cor0); 
+    float: right;     
     margin-top: 100px;
-    margin-right: 5em;     
-    height: 300px; 
-    width: 300px;
-    float: left;
-    display: inline-block;
-    justify-content: space-between;                    
+    border-radius: 50%;     
 }
 
-.photoDetails1 {
-    width: 250px;
-    height: 400px;
-    background-color: #c181598e;;
-    margin-top: 30px;
-    margin-left: 100px;
-    float: left;      
-}
-
-.photoDetails2 {       
+.line2 {       
     margin-top: -350px;
     margin-left: 60px;
-    float: right; 
-    margin-top: -325px;    
+    float: left; 
+    margin-top: -100px;    
 }
-
-.cosmos-sobre-txt {   
-    margin-left: 450px;
-    margin-top: -400px;
-    max-width: 650px;
-    min-width: 280px;     
-    float: left;
-    display: inline-block;
-    justify-content: space-between;
-    font-family: var(--font-texto);
-    font-size: 20px;
-    color: #545454;       
-}  
 
 .cosmos-sobre-img1 {
     border-radius: 50%;  
     height: 300px; 
     width: 300px;   
-    border: 3px solid #fff; 
+    border: 2px solid #fff; 
 }
 
+.line3 {
+    width: 130px;
+    height: 130px;
+    background-color: #c18159;;    
+    margin-top: -320px;
+    margin-left: 20px;
+    float: left; 
+    border-radius: 50%;   
+    border: 2px solid #fff;
+}
+
+
+
+
+
+
 .cosmos-sobre-nome {
-    color: #373435;;
-    font-family: var(--fonte-destaque);    
+    color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    font-weight: lighter;    
     text-align: center;
-    margin: auto;
-    padding: 10px;
-    font-size: 40px;   
-    width: 400px;
+    margin: 20px;
+    text-shadow: 3px 3px 4px rgba(6, 24, 37, 0.774);
+    
 }
 
 @media (min-width: 1000px) {
@@ -378,7 +372,18 @@ article {
         justify-content: space-between;                     
     }
 
-  
+    .cosmos-sobre-txt {   
+        margin-left: 60px;
+        max-width: 650px;
+        min-width: 280px;     
+        float: left;
+        display: inline-block;
+        justify-content: space-between;
+        width: 500px;
+        font-family: var(--font-texto);
+        font-size: 20px;
+        color: #545454;
+    }  
 }
 
 .cosmos-projects {    
@@ -401,6 +406,7 @@ article {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
+
 }
 
 .item {
