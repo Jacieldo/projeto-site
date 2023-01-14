@@ -16,7 +16,7 @@
     --cor0: #0f3f8b;
     --cor1: #c1815960;
     --cor2: #c18159d2;
-    --fonte-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --fonte-padrao: "Montserrat", Helvetica, Arial, sans-serif;
     --fonte-destaque: 'DK', Roboto, -apple-system, sans-serif;
     --font-texto: 'Source Sans Pro', sans-serif;
 }
@@ -167,30 +167,11 @@ nav {
     .cosmos-sobre-img img {
         height: 250px;
         width: 250px;
-    }    
+    }        
 
-    .cosmos-sobre-img div {
-        width: 100px;
-        height: 8px;
-        background-color: var(--cor0);
-        margin: 5px 0;   
-        float: right; 
-    }
+   
 
-    .cosmos-sobre-img {
-        display: flex;
-        justify-content: center;
-        min-width: 270px;
-        max-width: 900px;
-    }
-
-    .cosmos-sobre-txt {     
-        max-width: 900px;
-        min-width: 270px;     
-        float: left;
-        display: inline-block;
-        justify-content: space-between;
-    }
+    
 
 
     .cosmos-projects {
@@ -302,16 +283,16 @@ article {
     margin-right: auto;  
 }
 
-.cosmos-sobre {   
+#cosmos-sobre {   
     max-width: 1100px;
     min-width: 300px;
     width: 95vw;   
     height: 880px;
-    margin: 3em auto;   
+    margin: 1em auto;   
+    padding-top: 5em;
 }
 
 .cosmos-sobre-img { 
-    background-color: #8b0f0f;
     margin-top: 100px;
     margin-right: 5em;     
     height: 300px; 
@@ -340,7 +321,7 @@ article {
 .cosmos-sobre-txt {   
     margin-left: 450px;
     margin-top: -400px;
-    max-width: 650px;
+    padding: 10px;
     min-width: 280px;     
     float: left;
     display: inline-block;
@@ -384,10 +365,16 @@ article {
 .cosmos-projects {    
     width: 100vw;
     text-align: center;
-    background-color: #373435;
+    background-color: #373435;    
+}
+
+.projetos-cosmos-projects {
     color: #fff;
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-destaque);
     font-size: 60px;
+    text-align: center;
+    height: 200px;
+    padding-top: 70px;
 }
 
 #cosmos-projects-img{
@@ -418,22 +405,17 @@ article {
     object-fit: cover;
 }
 
-.cosmos-projects p {     
-    text-align: center;    
-}
-
 .cosmos-contacts {
-    width: 100vw;
-    text-align: center;
-    background-color: #fff;
-    color: #373435;
-    font-family: var(--fonte-padrao);
-    font-size: 60px;
+    width: 100vw;    
 } 
 
-.cosmos-contacts p {     
+.contatos-cosmos-contacts {
+    color: #373435;
+    font-family: var(--fonte-destaque);
+    font-size: 60px;
     text-align: center;
-    
+    height: 200px;
+    padding-top: 70px;
 }
 
 footer {
