@@ -132,8 +132,7 @@ nav {
         height: 21.75vh;
         text-align: center;        
         vertical-align: middle;  
-        display: table-cell;
-               
+        display: table-cell;               
     }    
 
     .nav-list li:hover {
@@ -157,59 +156,10 @@ nav {
 
     .nav-list li.topo:hover {
         background-color: #cebaae00;
-    }
-
-    article {
-        min-width: 270px;
-        max-width: 900px;
-    }    
-
-    .cosmos-sobre-img img {
-        height: 250px;
-        width: 250px;
-    }        
-
-   
-
-    
-
-
-    .cosmos-projects {
-        text-align: center;        
-    }
-    
-    .cosmos-projects-01 {        
-        display: inline-block;
-        height: 500px;
-        width: 90vw;
-        border: solid 1px #fff;
-    }
-    
-    .cosmos-projects-02 {
-        display: inline-block;
-        height: 500px;
-        width: 90vw;
-        border: solid 1px #fff;
-    }
-    
-    .cosmos-projects-01 img {
-        width: 100%;
-        height: 100%;
-        height: 500px;
-    }
-    
-    .cosmos-projects-02 img {
-        width: 100%;
-        height: 100%;
-        height: 500px;
-        object-fit: cover;
-    }
-
-    .cosmos-projects p {      
-        margin: auto; 
-    }
-    
+    }   
 }
+
+
 
 .nav-list.active {
     transform: translateX(0);
@@ -260,82 +210,174 @@ nav {
     opacity: 1;
 }
 
-main {   
-    background-color: #f7f7f7;;
-    width: 100vw;
-    padding-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+
+@media (min-width: 999px) {
+    main {   
+        background-color: #f7f7f7;;
+        width: 100vw;
+        padding-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        border: #d8076f 1px solid;
+    }
+
+    main p {
+        margin: 15px 0px;
+        text-align: justify;
+        text-indent: 30px;
+        line-height: 1.5em;
+    }
+
+    article {    
+        width: 95vw;     
+        margin-left: auto;
+        margin-right: auto;   
+        border: #d83807 solid 3px;       
+    }
+
+    #cosmos-sobre {     
+        width: 95vw;   
+        max-width: 1100px;
+        height: 800px;
+        margin: 3em auto;   
+        padding-top: 5em;
+        border: #0f3f8b solid 3px;
+    }
+
+    .cosmos-sobre-img { 
+        margin-top: 100px;
+        margin-right: 5em;     
+        height: 300px; 
+        width: 300px;
+        float: left;
+        display: inline-block;
+        justify-content: space-between;      
+        border: #0dcf06 2px solid;              
+    }
+
+    .photoDetails1 {
+        width: 250px;
+        height: 400px;
+        background-color: #c181598e;;
+        margin-top: 30px;
+        margin-left: 100px;
+        float: left;      
+    }
+
+    .photoDetails2 {       
+        margin-top: -350px;
+        margin-left: 60px;
+        float: right; 
+        margin-top: -325px;    
+    }
+
+    .cosmos-sobre-img1 {
+        border-radius: 50%;  
+        height: 300px; 
+        width: 300px;   
+        border: 3px solid #fff; 
+    }
+
+    .cosmos-sobre-nome {
+        color: #373435;;
+        font-family: var(--fonte-destaque);    
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        font-size: 40px;   
+        width: 400px;
+    }
+
+    .cosmos-sobre-txt {   
+        margin-left: 450px;
+        margin-top: -400px;
+        padding: 10px;    
+        float: left;
+        display: inline-block;
+        justify-content: space-between;
+        font-family: var(--font-texto);
+        font-size: 20px;
+        color: #545454;       
+    }  
+
+    
+
+   
+
+    
+
+    
+    
+
+    .cosmos-projects {    
+        width: 100vw;
+        text-align: center;
+        background-color: #373435;    
+    }
+
+    .projetos-cosmos-projects {
+        color: #fff;
+        font-family: var(--fonte-destaque);
+        font-size: 60px;
+        text-align: center;
+        height: 200px;
+        padding-top: 70px;
+    }
+
+    #cosmos-projects-img{
+        width: 100%;
+        margin: auto;
+    }
+
+    #items {
+        display: flex;
+        overflow-x: auto; /* Scroll nas imagens */
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+    }
+
+    .item {
+        flex: none;
+        width: 50%; 
+        height: 400px;
+        scroll-snap-align: start;
+        pointer-events: none;
+        border: 15px solid #0f3f8b00;
+    }
+
+    .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cosmos-contacts {
+        width: 100vw;    
+    } 
+
+    .contatos-cosmos-contacts {
+        color: #373435;
+        font-family: var(--fonte-destaque);
+        font-size: 60px;
+        text-align: center;
+        height: 200px;
+        padding-top: 70px;
+    }
 }
 
 main p {
     margin: 15px 0px;
     text-align: justify;
-    text-indent: 30px;
-    line-height: 1.5em;
+    text-indent: 25px;
+    line-height: 1.3em;
 }
 
-article {
-    max-width: 1000px;
-    min-width: 300px;
-    width: 95vw;     
-    margin-left: auto;
-    margin-right: auto;  
-}
-
-#cosmos-sobre {   
-    max-width: 1100px;
-    min-width: 300px;
-    width: 95vw;   
-    height: 880px;
-    margin: 1em auto;   
-    padding-top: 5em;
-}
-
-.cosmos-sobre-img { 
-    margin-top: 100px;
-    margin-right: 5em;     
-    height: 300px; 
-    width: 300px;
-    float: left;
-    display: inline-block;
-    justify-content: space-between;                    
-}
-
-.photoDetails1 {
-    width: 250px;
-    height: 400px;
-    background-color: #c181598e;;
-    margin-top: 30px;
-    margin-left: 100px;
-    float: left;      
-}
-
-.photoDetails2 {       
-    margin-top: -350px;
-    margin-left: 60px;
-    float: right; 
-    margin-top: -325px;    
-}
-
-.cosmos-sobre-txt {   
-    margin-left: 450px;
-    margin-top: -400px;
-    padding: 10px;
-    min-width: 280px;     
-    float: left;
-    display: inline-block;
-    justify-content: space-between;
-    font-family: var(--font-texto);
-    font-size: 20px;
-    color: #545454;       
-}  
-
-.cosmos-sobre-img1 {
-    border-radius: 50%;  
-    height: 300px; 
-    width: 300px;   
-    border: 3px solid #fff; 
+#cosmos-sobre {     
+    width: 95vw; 
+    margin: auto;      
+    padding-top: 3em;
+    border: #0f3f8b solid 3px;
 }
 
 .cosmos-sobre-nome {
@@ -344,79 +386,29 @@ article {
     text-align: center;
     margin: auto;
     padding: 10px;
-    font-size: 40px;   
-    width: 400px;
+    font-size: 30px;   
+    border: #d83807 1px solid;
 }
 
-@media (min-width: 1000px) {
-    .cosmos-sobre-img { 
-        border: #fff  solid;
-        margin-right: 1em;     
-        height: 300px; 
-        width: 300px;
+@media (max-width: 999px) {
+    .cosmos-sobre-txt {       
+        padding: 10px;
+        min-width: 280px;     
         float: left;
         display: inline-block;
-        justify-content: space-between;                     
-    }
+        justify-content: space-between;
+        font-family: var(--font-texto);
+        font-size: 18px;
+        color: #545454;       
+    } 
 
-  
 }
 
-.cosmos-projects {    
-    width: 100vw;
-    text-align: center;
-    background-color: #373435;    
-}
 
-.projetos-cosmos-projects {
-    color: #fff;
-    font-family: var(--fonte-destaque);
-    font-size: 60px;
-    text-align: center;
-    height: 200px;
-    padding-top: 70px;
-}
 
-#cosmos-projects-img{
-    width: 100%;
-    margin: auto;
-}
 
-#items {
-    display: flex;
-    overflow-x: auto; /* Scroll nas imagens */
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-}
 
-.item {
-    flex: none;
-    width: 50%; 
-    height: 400px;
-    scroll-snap-align: start;
-    pointer-events: none;
-    border: 15px solid #0f3f8b00;
-}
 
-.item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.cosmos-contacts {
-    width: 100vw;    
-} 
-
-.contatos-cosmos-contacts {
-    color: #373435;
-    font-family: var(--fonte-destaque);
-    font-size: 60px;
-    text-align: center;
-    height: 200px;
-    padding-top: 70px;
-}
 
 footer {
     background-color: var(--cor0);
