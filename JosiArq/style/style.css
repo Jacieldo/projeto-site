@@ -212,37 +212,17 @@ nav {
 
 
 @media (min-width: 999px) {
-    main {   
-        background-color: #f7f7f7;;
-        width: 100vw;
-        padding-top: 40px;
-        margin-left: auto;
-        margin-right: auto;
-        border: #d8076f 1px solid;
-    }
-
     main p {
-        margin: 15px 0px;
-        text-align: justify;
         text-indent: 30px;
         line-height: 1.5em;
     }
 
-    article {    
-        width: 95vw;     
-        margin-left: auto;
-        margin-right: auto;   
-        border: #d83807 solid 3px;       
-    }
-
-    #cosmos-sobre {     
-        width: 95vw;   
+    #cosmos-sobre {          
         max-width: 1100px;
-        height: 800px;
+        height: 850px;
         margin: 3em auto;   
-        padding-top: 5em;
-        border: #0f3f8b solid 3px;
-    }
+        padding-top: 5em;       
+    } 
 
     .cosmos-sobre-img { 
         margin-top: 100px;
@@ -279,11 +259,6 @@ nav {
     }
 
     .cosmos-sobre-nome {
-        color: #373435;;
-        font-family: var(--fonte-destaque);    
-        text-align: center;
-        margin: auto;
-        padding: 10px;
         font-size: 40px;   
         width: 400px;
     }
@@ -291,80 +266,14 @@ nav {
     .cosmos-sobre-txt {   
         margin-left: 450px;
         margin-top: -400px;
-        padding: 10px;    
-        float: left;
-        display: inline-block;
-        justify-content: space-between;
-        font-family: var(--font-texto);
-        font-size: 20px;
-        color: #545454;       
-    }  
-
-    
-
-   
-
-    
-
-    
-    
-
-    .cosmos-projects {    
-        width: 100vw;
-        text-align: center;
-        background-color: #373435;    
-    }
-
-    .projetos-cosmos-projects {
-        color: #fff;
-        font-family: var(--fonte-destaque);
-        font-size: 60px;
-        text-align: center;
-        height: 200px;
-        padding-top: 70px;
-    }
-
-    #cosmos-projects-img{
-        width: 100%;
-        margin: auto;
-    }
-
-    #items {
-        display: flex;
-        overflow-x: auto; /* Scroll nas imagens */
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scroll-behavior: smooth;
-    }
+        font-size: 20px;     
+    }     
 
     .item {
-        flex: none;
         width: 50%; 
-        height: 400px;
-        scroll-snap-align: start;
-        pointer-events: none;
-        border: 15px solid #0f3f8b00;
-    }
-
-    .item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .cosmos-contacts {
-        width: 100vw;    
-    } 
-
-    .contatos-cosmos-contacts {
-        color: #373435;
-        font-family: var(--fonte-destaque);
-        font-size: 60px;
-        text-align: center;
-        height: 200px;
-        padding-top: 70px;
-    }
+    }   
 }
+
 
 main p {
     margin: 15px 0px;
@@ -373,8 +282,25 @@ main p {
     line-height: 1.3em;
 }
 
+main {   
+    background-color: #f7f7f7;;
+    width: 100vw;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: #d8076f 1px solid;
+}
+
+article {    
+    width: 95vw;   
+    height: auto;  
+    margin-left: auto;
+    margin-right: auto;   
+    border: #d83807 solid 3px;       
+}
+
 #cosmos-sobre {     
-    width: 95vw; 
+    width: 95vw;    
     margin: auto;      
     padding-top: 3em;
     border: #0f3f8b solid 3px;
@@ -390,20 +316,85 @@ main p {
     border: #d83807 1px solid;
 }
 
-@media (max-width: 999px) {
-    .cosmos-sobre-txt {       
-        padding: 10px;
-        min-width: 280px;     
-        float: left;
-        display: inline-block;
-        justify-content: space-between;
-        font-family: var(--font-texto);
-        font-size: 18px;
-        color: #545454;       
-    } 
+.cosmos-sobre-txt {       
+    padding: 10px;
+    min-width: 280px;     
+    float: left;
+    display: inline-block;
+    justify-content: space-between;
+    font-family: var(--font-texto);
+    color: #545454;       
+} 
 
+@media (max-width: 999px) {
+    #cosmos-sobre {
+        display: inline-block;
+    }
+    .cosmos-sobre-txt {       
+        font-size: 18px;    
+    } 
 }
 
+.cosmos-projects {    
+    width: 100vw;
+    text-align: center;
+    background-color: #373435;    
+}
+
+.projetos-cosmos-projects {
+    color: #fff;
+    font-family: var(--fonte-destaque);
+    font-size: 60px;
+    text-align: center;
+    height: 200px;
+    padding-top: 70px;
+}
+
+#cosmos-projects-img{
+    width: 100%;
+    margin: auto;
+}
+
+#items {
+    display: flex;
+    overflow-x: auto; /* Scroll nas imagens */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.item {
+    flex: none;    
+    height: 400px;
+    scroll-snap-align: start;
+    pointer-events: none;
+    border: 15px solid #0f3f8b00;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 999px) {
+    .item {
+        width: 100%; 
+    }
+}
+
+.cosmos-contacts {
+    width: 100vw;    
+} 
+
+.contatos-cosmos-contacts {
+    color: #373435;
+    font-family: var(--fonte-destaque);
+    font-size: 60px;
+    text-align: center;
+    height: 200px;
+    padding-top: 70px;
+}
 
 
 
