@@ -232,7 +232,7 @@ nav {
         float: left;
         display: inline-block;
         justify-content: space-between;      
-        border: #0dcf06 2px solid;              
+                 
     }
 
     .photoDetails1 {
@@ -288,7 +288,7 @@ main {
     padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    border: #d8076f 1px solid;
+    
 }
 
 article {    
@@ -296,14 +296,14 @@ article {
     height: auto;  
     margin-left: auto;
     margin-right: auto;   
-    border: #d83807 solid 3px;       
+          
 }
 
 #cosmos-sobre {     
     width: 95vw;    
     margin: auto;      
     padding-top: 3em;
-    border: #0f3f8b solid 3px;
+    
 }
 
 .cosmos-sobre-nome {
@@ -312,8 +312,9 @@ article {
     text-align: center;
     margin: auto;
     padding: 10px;
-    font-size: 30px;   
-    border: #d83807 1px solid;
+    font-size: 30px; 
+    width: 400px;  
+  
 }
 
 .cosmos-sobre-txt {       
