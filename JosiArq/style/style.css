@@ -283,7 +283,7 @@ main p {
 }
 
 main {   
-    background-color: #880303;;
+    background-color: #f7f7f7;;
     width: 100vw;
     padding-top: 20px;
     margin-left: auto;
@@ -303,6 +303,7 @@ article {
     width: 95vw;    
     margin: auto;      
     padding-top: 3em;
+    border: #0f3f8b 1px solid;
     
 }
 
@@ -318,13 +319,14 @@ article {
 }
 
 .cosmos-sobre-txt {       
-    padding: 10px;  
-    width: 100vw;  
+    padding: 10px;
+    
     float: left;
     display: inline-block;
     justify-content: space-between;
     font-family: var(--font-texto);
-    color: #545454;       
+    color: #545454;      
+    border: #d10bc1 1px solid; 
 } 
 
 @media (max-width: 999px) {
