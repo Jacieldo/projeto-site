@@ -320,7 +320,6 @@ article {
 
 .cosmos-sobre-txt {       
     padding: 10px;
-    width: 95vw; 
     float: left;
     display: inline-block;
     justify-content: space-between;
@@ -334,7 +333,8 @@ article {
         display: inline-block;
     }
     .cosmos-sobre-txt {       
-        font-size: 18px;    
+        font-size: 18px;   
+        width: 95vw; 
     } 
 }
 
