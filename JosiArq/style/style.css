@@ -314,7 +314,7 @@ article {
     margin: auto;
     padding: 10px;
     font-size: 30px; 
-    width: 400px;  
+    
   
 }
 
@@ -336,6 +336,9 @@ article {
         font-size: 18px;   
         width: 95vw; 
     } 
+    .cosmos-sobre-nome {
+        width: 95vw;
+    }
 }
 
 .cosmos-projects {    
