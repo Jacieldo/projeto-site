@@ -318,8 +318,7 @@ article {
 }
 
 .cosmos-sobre-txt {       
-    padding: 10px;
-    min-width: 280px;     
+    padding: 10px;    
     float: left;
     display: inline-block;
     justify-content: space-between;
