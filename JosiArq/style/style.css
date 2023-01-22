@@ -283,7 +283,7 @@ main p {
 }
 
 main {   
-    background-color: #f7f7f7;;
+    background-color: #880303;;
     width: 100vw;
     padding-top: 20px;
     margin-left: auto;
@@ -318,7 +318,8 @@ article {
 }
 
 .cosmos-sobre-txt {       
-    padding: 10px;    
+    padding: 10px;  
+    width: 100vw;  
     float: left;
     display: inline-block;
     justify-content: space-between;
