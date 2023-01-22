@@ -62,14 +62,14 @@ nav {
     height: 100%;
     object-fit:scale-down;
     border: none;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .logo-list li{
     letter-spacing: 1px;
     list-style: none;
     color: #fff;
-    margin-left: 5px;
+    margin-left: 0.5em;
     font-size: 0.9em;   
     text-transform: capitalize;
     justify-content: center;
@@ -211,7 +211,7 @@ nav {
 }
 
 
-@media (min-width: 999px) {
+@media (min-width: 1000px) {
     main p {
         text-indent: 30px;
         line-height: 1.5em;
@@ -314,6 +314,7 @@ article {
     margin: auto;
     padding: 10px;
     font-size: 30px; 
+    border: #8af114 1px solid;
     
   
 }
@@ -344,7 +345,8 @@ article {
 .cosmos-projects {    
     width: 100vw;
     text-align: center;
-    background-color: #373435;    
+    background-color: #373435;  
+    border: #e2400e 1px solid;  
 }
 
 .projetos-cosmos-projects {
@@ -354,6 +356,7 @@ article {
     text-align: center;
     height: 200px;
     padding-top: 70px;
+    border: #bfdd13 1px solid;
 }
 
 #cosmos-projects-img{
