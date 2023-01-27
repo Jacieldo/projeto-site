@@ -1,30 +1,9 @@
-
-h1 {
-    text-align: center;
-    padding: 20px;
-    z-index: 6;
+.topo-contacts {
+    width: 100vw;
+    height: 100px;
 }
 
-nav {
-    position: absolute;
-    height: 180px;
-    background-color: #c18159e0;;
-}
-
-main {
-    height: 1200px;
-    width: 90vw;
-    padding-top: 230px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;    
-}
-
-.nav-list {
-    padding-top: 5px;
- }
-
- .titulo {
+.titulo {
     margin-left: auto;
     margin-right: auto;
     
@@ -38,32 +17,66 @@ main {
     color: var(--cor3);
 }
 
-.cont1{
-    display: flex;
-    text-align: left;
-    font-family: var(--fonte-padrao);
-    color: var(--cor3);
+form {
+    margin: 0 auto;
+    width: 400px; /*centralização da página*/
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
 }
 
-.txt1 {
-    border: #0f3f8b solid 1px;
-    text-align: left;
+form div + div {
+    margin: 1em;
 }
-.contacts1 {
-    font-size: 20px;
-    line-height: 2.5em;
-    width: 35vw;
-    height: 200px;    
-    margin: 10px; 
-    border: #0f3f8b 1px solid;
+
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: #000;
+}
+
+textarea {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: vertical;
 }
 
 
-.contacts2 {    
-    width: 49vw;
-    height: 200px;
-    margin: 10px;    
-    border: solid 1px #0f3f8b;
+.button {
+    /* Para posicionar os botões para a mesma posição dos campos de texto */
+    padding-left: 90px; /* mesmo tamanho que os elementos do tipo label */
 }
+button {
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+    margin-left: .5em;
+}
+
+
+
+
 
 
