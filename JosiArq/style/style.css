@@ -16,12 +16,18 @@
     --cor0: #0f3f8b;
     --cor1: #c1815960;
     --cor2: #c18159d2;
+    --cor3: #373435;
     --fonte-padrao: "Montserrat", Helvetica, Arial, sans-serif;
     --fonte-destaque: 'DK', Roboto, -apple-system, sans-serif;
     --font-texto: 'Source Sans Pro', sans-serif;
 }
 body {
     min-height: 540px;
+}
+
+.topo-content {
+    width: 100vw;
+    height: 60px;  
 }
 
 a {
@@ -56,6 +62,18 @@ nav {
     letter-spacing: 4px;
     height: 70px;
     border: #0f3f8b 1px solid;
+}
+
+@media (max-width: 999px) {
+    .logo {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        width: 50vw;
+    }
 }
 
 .logo img{
@@ -288,7 +306,7 @@ main p {
 }
 
 main {   
-    background-color: #f7f7f7;;
+    background-color: #f7f7f7;
     width: 100vw;
     padding-top: 20px;
     margin-left: auto;
@@ -342,8 +360,6 @@ article {
 
 .cosmos-projects {    
     width: 100vw;
-    height: 500px;
-    text-align: center;
     display: inline-block;      
 }
 
@@ -358,20 +374,11 @@ article {
 }
 
 #cosmos-projects-img{
-    padding: auto;
-    margin: auto;
-    width: 95vw;
-    display: inline-block;
+    width: 95vw;   
 }
 
-#items {
-    width: 500px;
-    height: 500px;
-}
-
-.cosmos-projects-img1{
-    width: 95vw;
-    padding: 40px;    
+.cosmos-projects-obra{  
+    text-align: center;
 }
 
 .project-img {
@@ -398,9 +405,11 @@ article {
 
     .project-img {
         height: 25vh;
-        width: 80vw;
-        margin-top: 15px;        
+        width: 70vw;
+        margin-top: 15px;  
     }
+
+   
 }
 
 .cosmos-contacts {
@@ -408,7 +417,7 @@ article {
 } 
 
 .contatos-cosmos-contacts {
-    color: #373435;
+    color: var(--cor3);
     font-family: var(--fonte-destaque);
     font-size: 60px;
     text-align: center;
