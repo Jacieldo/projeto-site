@@ -385,6 +385,7 @@ article {
     height: 300px;
     width: 500px;
     display: inline-block;
+    border: #0f3f8b 1px solid;
 }
 
 .project-img img{

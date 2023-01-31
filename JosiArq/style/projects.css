@@ -2,3 +2,20 @@
     color: var(--cor3);
     background-color: #f7f7f7; 
 }
+
+.photoDetails1 {
+    font-family: var(--fonte-padrao);
+    text-align: right;
+    color: #545454;  
+    display: block;
+    border: #545454 solid 1px;
+}
+
+
+.titulo-ficha-projetos {
+    font-size: 18px;
+    margin-top: 40px;
+    margin-right: 10px;
+    font-weight: lighter;
+}
+
