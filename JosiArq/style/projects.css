@@ -19,3 +19,8 @@
     font-weight: lighter;
 }
 
+a:hover {
+    opacity: 0.9;
+    background-color: #545454;
+}
+
