@@ -31,7 +31,7 @@ body {
 }
 
 a {
-    color: #fff;
+    color: var(--cor3);
     text-decoration: none;
     transition: 0.3s;
 }
@@ -359,7 +359,7 @@ article {
 
 .cosmos-projects {    
     width: 100vw;
-    display: inline-block;    
+     
 }
 
 .projetos-cosmos-projects {
@@ -374,7 +374,8 @@ article {
 }
 
 #cosmos-projects-img{
-    width: 95vw;       
+    width: 95vw;     
+    margin:auto;   
 }
 
 .cosmos-projects-obra{  
@@ -385,8 +386,8 @@ article {
 }
 
 .project-img {
-    width: 95vw;
     display: inline-block;  
+   
 }
 
 .project-one img{
@@ -420,7 +421,9 @@ article {
     height: 100%;
     width: 100%;
     position: absolute;
-    transition: 1.2s;
+    transition: 1.3s;
+    padding: 2em;
+    border: #373435 15px solid;    
 }
 
 .project-img a {
@@ -445,27 +448,23 @@ article {
 
 
 
-@media (max-width: 999px) {
-    
-    .project-img {
-        height: 25vh;
-        width: 70vw;            
-    }
+@media (max-width: 999px) {  
 
     .project-one {
         width: 95vw;   
-    }
-
-    .project-one {
         height: 200px;
-        width: 300px;    
+        width: 300px; 
     }
 
     .cosmos-projects-obra{  
        width: 100vw;
-    }
+    } 
 
- 
+    .project-one:hover .second {        
+        font-size: 30px;        
+        padding: 1.5em;
+        border: #373435 10px solid;    
+    }
    
 }
 
