@@ -1,36 +1,115 @@
+.contato {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+}
+
+.contato01 {
+    min-width: 270px;
+    width: 648px;
+    max-width: 645px;
+    height: 500px;
+    display: inline-block;
+    font-family: 'Open Sans',sans-serif;
+    color: var(--cor3);
+    font-weight: 400; 
+    margin: auto;  
+}
+
+.top-contato1 {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 80px;
+}
+
+.top-contato-txt1 {
+    width: 85%;
+    height: 100%;
+    float: right;
+    text-align: left;
+    padding-top: 12px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.corpo-contato1 {
+    height: 400px;
+    width: 100%;
+}
+
+
+.contato02 {
+    min-width: 270px;
+    width: 648px;
+    max-width: 645px;
+    height: 500px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--cor3);
+    font-weight: 400;
+    margin: auto;
+}
+
+.top-contato2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100px;
+}
+
+.top-contato-txt2 {
+    width: 85%;
+    height: 100%;
+    text-align: left;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+.corpo-contato2 {
+    height: 400px;
+    width: 100%;
+    padding: 5px;
+    font-size:14px;
+}
+
+
+
 
 
 
 form {
     margin: 0 auto;
-    width: 400px; /*centralização da página*/
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
+    width: 85%; /*centralização da página*/
+    padding: 1em 0;
+    float: right;
 }
 
 form div + div {
-    margin: 1em;
+    margin: 1em 0;
 }
 
 label {
     /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
     display: inline-block;
     width: 90px;
-    text-align: right;
+    text-align: left;
 }
 
 input, textarea {
     /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
-    font: 1em sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: left;
+    height: 30px;
+    color: #998c8c;
 
     /* Para dar o mesmo tamanho a todos os campo de texto */
-    width: 300px;
+    width: 90%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
     /* Para harmonizar o look & feel das bordas nos campos de texto*/
-    border: 1px solid #999;
+    border: 1px solid #ccbdbd;
 }
 
 input:focus, textarea:focus {
@@ -59,8 +138,40 @@ button {
     margin-left: .5em;
 }
 
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/font/fontello.eot?67870941');
+    src: url('../font/font/fontello.eot?67870941#iefix') format('embedded-opentype'),
+         url('../font/font/fontello.woff2?67870941') format('woff2'),
+         url('../font/font/fontello.woff?67870941') format('woff'),
+         url('../font/font/fontello.ttf?67870941') format('truetype'),
+         url('../font/font/fontello.svg?67870941#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
 
+  .icon-list-text:before {
+    speak: none;
+    font-family: 'fontello';
+    display: inline-block;
+    margin-right: 0.3em;
+    color: var(--cor2);
+    font-size: 20px;
+    padding: .5em 0;
+    
+  }
 
+  .icon-list-text.adress:before {
+    content: "\e801";
+  }
+
+  .icon-list-text.tell:before {
+    content: "\e800";
+  }
+
+  .icon-list-text.email:before {
+    content: "\f0e0";
+  }
 
 
 

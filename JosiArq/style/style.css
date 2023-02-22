@@ -231,8 +231,8 @@ nav {
 
 .apresentacao{
     width: 100vw;
-    height: 350px;
-    background-color: #373435;
+    height: 300px;
+    background-color: var(--cor2);
     padding-top: 80px;
     padding-left: 80px;
 }
@@ -540,7 +540,7 @@ main {
 
 
 footer {
-    background-color: var(--cor0);
+    background-color: var(--cor2);
     color: white;
     text-align: center;
     font-size: .8em;
