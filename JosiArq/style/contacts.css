@@ -1,19 +1,48 @@
 .contato {
     max-width: 1300px;
     margin: auto;
-    display: flex;
+    display: flex;    
 }
 
-.contato01 {
-    min-width: 270px;
-    width: 648px;
-    max-width: 645px;
+@media (max-width: 999px) {
+    .contato {
+        display: inline-block;    
+    }
+
+    .contato01 {
+        width: 99vw;     
+    }
+
+    .contato02 {        
+        width: 99vw;
+    }
+
+    .contato02 p {
+        padding: 8px;
+    }   
+}
+
+
+@media (min-width: 1000px) {
+    .contato01 {
+        width: 648px;
+        max-width: 645px;         
+        margin: auto;        
+    }
+
+    .contato02 {
+        width: 648px;
+    }
+
+
+}
+
+.contato01 {   
     height: 500px;
     display: inline-block;
     font-family: 'Open Sans',sans-serif;
     color: var(--cor3);
-    font-weight: 400; 
-    margin: auto;  
+    font-weight: 400;        
 }
 
 .top-contato1 {
@@ -40,9 +69,6 @@
 
 
 .contato02 {
-    min-width: 270px;
-    width: 648px;
-    max-width: 645px;
     height: 500px;
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
@@ -131,11 +157,16 @@ textarea {
 
 .button {
     /* Para posicionar os botões para a mesma posição dos campos de texto */
-    padding-left: 90px; /* mesmo tamanho que os elementos do tipo label */
+    /* mesmo tamanho que os elementos do tipo label */
+    color: var(--cor2);
 }
 button {
     /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
-    margin-left: .5em;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--cor3);
+    background-color: #d4c4baa8;
+    padding: 5px;
+    border-radius: 10%;
 }
 
 @font-face {
@@ -172,6 +203,7 @@ button {
   .icon-list-text.email:before {
     content: "\f0e0";
   }
+
 
 
 

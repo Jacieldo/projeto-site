@@ -8,6 +8,20 @@
     src: url(../font/DK\ Semarang.otf) format('opentype');    
 }
 
+@font-face {
+    font-family: 'rodape';
+    src: url('../font/font1/rodape.eot?46519065');
+    src: url('../font/font1/rodape.eot?46519065#iefix') format('embedded-opentype'),
+         url('../font/font1/rodape.woff2?46519065') format('woff2'),
+         url('../font/font1/rodape.woff?46519065') format('woff'),
+         url('../font/font1/rodape.ttf?46519065') format('truetype'),
+         url('../font/font1/rodape.svg?46519065#rodape') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+ 
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
 
   
@@ -521,31 +535,53 @@ main {
    
 }
 
-.cosmos-contacts {
-    width: 100vw;    
-} 
-
-.contatos-cosmos-contacts {
-    color: var(--cor3);
-    font-family: var(--fonte-destaque);
-    font-size: 60px;
-    text-align: center;
-    height: 200px;
-    padding-top: 70px;
-}
-
-
-
 
 
 
 footer {
-    background-color: var(--cor2);
+    background-color: var(--cor3);
     color: white;
     text-align: center;
     font-size: .8em;
     width: 100vw;
-    height: 100px;
+    height: 400px;
+}
+
+.footer-logo {
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-logo-img {
+    height: 200px;
+    width: 300px;
+    margin: auto;
+}
+
+.logo-img {
+    margin-top: -20px;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-logo-nome {
+    font-family: var(--fonte-destaque);
+    font-size: 25px;
+    margin-top: -50px;
+}
+
+.footer-logo-div {
+    margin-top: 30px;   
+}
+
+.footer-logo-cont  {    
+    margin-right: 0.3em;
+    color: #fff;
+    font-size: 12px;
+    padding: .5em 0; 
+    text-transform: lowercase;   
 }
 
 footer a {
@@ -559,6 +595,30 @@ footer a:hover {
     color: white;
 }
 
+
+
+.iconfont:before {  
+    speak: none;
+    font-family: 'rodape';
+    display: inline-block;
+    margin-right: 0.3em;
+    color: #ffffff;
+    font-size: 30px;
+    padding: .5em 0;   
+    margin-top: 10px;
+}
+
+.iconfont.insta:before {
+    content: "\f31e";
+}
+
+.iconfont.lkd:before {
+    content: "\f30c";
+}
+
+.iconfont.whats:before {
+    content: "\f232";
+}
 .cosmos-footer {
     display: flex;
     margin: auto;    
@@ -567,11 +627,17 @@ footer a:hover {
 }
 
 .cosmos-footer a {
-    padding: 10px;
+    padding: 15px;
 }
 
 .cosmos-footer img {   
     display: inline-block;
     width: 100%;
     height: 80%;
+}
+
+@media (max-width: 999px) {
+    .footer-logo-nome {
+        width: 100vw;
+    }    
 }
