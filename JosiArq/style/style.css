@@ -556,9 +556,7 @@ footer {
 
 .footer-logo-img {
     height: 200px;
-    width: 300px;
-    margin: auto;
-    border: 1px #fff solid;
+    width: 300px;  
 }
 
 .logo-img {
@@ -570,19 +568,21 @@ footer {
 .footer-logo-nome {
     font-family: var(--fonte-destaque);
     font-size: 25px;
+    width: 100%;
     margin-top: -50px;
 }
 
 .footer-logo-div {
-    margin-top: 30px;   
+    margin-top: 30px;
 }
 
-.footer-logo-cont  {    
+.footer-logo-cont  {   
+    width: 100%; 
     margin-right: 0.3em;
     color: #fff;
     font-size: 12px;
     padding: .5em 0; 
-    text-transform: lowercase;   
+    text-transform: lowercase;  
 }
 
 footer a {
@@ -638,12 +638,17 @@ footer a:hover {
 }
 
 @media (max-width: 999px) {
+    .footer-logo {
+        width: 100vw;        
+        max-width: 300px;        
+    }
+
     .footer-logo-nome {
-        width: 100vw;
+        width: 100%;
     }    
 
     .footer-logo-img {
-        margin: 0;
+        margin: auto;
         width: 100vw;        
         max-width: 300px;
        
