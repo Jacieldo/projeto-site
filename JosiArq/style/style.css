@@ -558,6 +558,7 @@ footer {
     height: 200px;
     width: 300px;
     margin: auto;
+    border: 1px #fff solid;
 }
 
 .logo-img {
@@ -640,4 +641,11 @@ footer a:hover {
     .footer-logo-nome {
         width: 100vw;
     }    
+
+    .footer-logo-img {
+        margin: 0;
+        width: 100vw;        
+        max-width: 300px;
+       
+    }
 }
