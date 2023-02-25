@@ -556,7 +556,9 @@ footer {
 
 .footer-logo-img {
     height: 200px;
-    width: 300px;  
+    width: 300px; 
+    border: #fff 1px solid; 
+    margin: auto;
 }
 
 .logo-img {
@@ -650,7 +652,12 @@ footer a:hover {
     .footer-logo-img {
         margin: auto;
         width: 100vw;        
-        max-width: 300px;
-       
+        max-width: 300px;       
+    }
+
+    .logo-img {
+        
+        width: 80%;
+        height: 80%;
     }
 }

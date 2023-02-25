@@ -4,6 +4,16 @@
     display: flex;    
 }
 
+.contatos-cosmos-contacts{
+    color: #373435;
+    font-family: var(--fonte-destaque);
+    font-size: 60px;
+    text-align: center;
+    height: 200px;
+    padding-top: 70px;
+}
+
+
 @media (max-width: 999px) {
     .contato {
         display: inline-block;    
