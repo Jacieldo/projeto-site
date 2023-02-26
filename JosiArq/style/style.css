@@ -245,7 +245,7 @@ nav {
 
 .apresentacao{
     width: 100vw;
-    height: 300px;
+    padding-bottom: 10px;
     background-color: var(--cor2);
     padding-top: 80px;
     padding-left: 80px;
@@ -287,8 +287,9 @@ nav {
 
 @media (max-width: 999px) {
     .apresentacao{
-        padding-top: 80px;
-        padding-left: 10px;
+        border: #0cf01f 1px solid;
+        padding-top: 50px;
+        padding-left: 5px;
     }
     
     .apresentacao h2 {
@@ -300,7 +301,7 @@ nav {
     }
     
     .apresentacao-det3 p {
-        padding-right: 5px;
+        padding: 0 2px;
         width: 100%;
     }
 }
