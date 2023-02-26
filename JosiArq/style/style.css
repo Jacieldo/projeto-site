@@ -413,11 +413,13 @@ main {
     display: inline-block;
     justify-content: space-between;
     font-family: var(--font-texto);
-    color: #545454;      
+    color: #545454;   
+    border: #0cf01f 1px solid;   
 } 
 
 .cosmos-sobre-txt p {
-    padding: 10px;
+    padding: 10px 5px;
+    border: #0f3f8b 1px solid;
 }
 
 @media (max-width: 999px) {
@@ -445,11 +447,13 @@ main {
     text-align: center;
     height: 200px;
     padding-top: 70px;
+    border: #f00ce5 1px solid;
 }
 
 #cosmos-projects-img{
     width: 95vw;     
-    margin:auto;   
+    margin:auto;  
+    border: #373435 1px solid; 
 }
 
 .cosmos-projects-obra{  
