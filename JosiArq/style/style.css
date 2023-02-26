@@ -403,19 +403,22 @@ main {
     font-family: var(--fonte-destaque);    
     text-align: center;
     margin: auto;
-    padding: 10px;
-    font-size: 30px; 
+    padding: 10px 0;
+    font-size: 28px; 
     border: #0cbbf0 solid 1px;
 }
 
-.cosmos-sobre-txt {       
-    padding: 10px;
+.cosmos-sobre-txt {     
     float: left;
     display: inline-block;
     justify-content: space-between;
     font-family: var(--font-texto);
     color: #545454;      
 } 
+
+.cosmos-sobre-txt p {
+    padding: 10px;
+}
 
 @media (max-width: 999px) {
     #cosmos-sobre {
@@ -553,6 +556,7 @@ footer {
     width: 500px;
     margin: auto;
     text-align: center;
+    border: #f00ce5 1px solid;
 }
 
 .footer-logo-img {
@@ -571,7 +575,7 @@ footer {
     font-family: var(--fonte-destaque);
     font-size: 25px;
     width: 100%;
-    margin-top: -50px;
+    margin-top: -60px;
     border: #f0f1f1 1px solid;
 }
 
@@ -656,6 +660,7 @@ footer a:hover {
 
     .footer-logo-nome {
         width: 100%;
+        margin-top: -90px;
     }    
 
     .footer-logo-img {
