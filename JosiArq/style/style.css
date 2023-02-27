@@ -242,6 +242,10 @@ nav {
     opacity: 1;
 }
 
+article {
+    width: 100vw;
+}
+
 
 .apresentacao{
     width: 100vw;
@@ -281,7 +285,7 @@ nav {
     font-family: 'Open Sans',sans-serif;
     color: #fff;
     font-weight: 300;
-    text-indent: 0;
+  
     width: 500px;
 }
 
@@ -290,19 +294,29 @@ nav {
         border: #0cf01f 1px solid;
         padding-top: 50px;
         padding-left: 5px;
+
+        width: 80vw;
+        
+    }
+
+    .apresentacao-det1 p {
+       border: #0cbbf0 solid 1px;
     }
     
     .apresentacao h2 {
        width: 100%;
+       border: #0cbbf0 solid 1px;
     }
         
     .apresentacao-det2 {
-        width: 40%;        
+        width: 40%;    
+        border: #0cbbf0 solid 1px;    
     }
     
     .apresentacao-det3 p {
         padding: 0 2px;
         width: 100%;
+        border: #0cbbf0 solid 1px;
     }
 }
 
