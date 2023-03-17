@@ -289,9 +289,15 @@ article {
     width: 500px;
 }
 
+.cosmos-works{
+    width: 100vw;
+    padding-bottom: 10px;
+    padding-top: 80px;
+    padding-left: 80px;
+}
+
 @media (max-width: 999px) {
     .apresentacao{
-        border: #0cf01f 1px solid;
         padding-top: 50px;
         padding-left: 5px;    
     }
@@ -302,18 +308,15 @@ article {
     
     .apresentacao h2 {
        width: 100%;
-       border: #0cbbf0 solid 1px;
     }
         
     .apresentacao-det2 {
-        width: 40%;    
-        border: #0cbbf0 solid 1px;    
+        width: 40%;       
     }
     
     .apresentacao-det3 p {
         padding: 0 2px;
         width: 100%;
-        border: #0cbbf0 solid 1px;
     }
 }
 
@@ -395,8 +398,7 @@ main p {
 
 main {   
     background-color: #f7f7f7;
-    width: 100vw;
-   
+    width: 100vw;   
     margin-left: auto;
     margin-right: auto;
     display: inline-block;    
@@ -417,7 +419,6 @@ main {
     margin: auto;
     padding: 10px 0;
     font-size: 28px; 
-    border: #0cbbf0 solid 1px;
 }
 
 .cosmos-sobre-txt {     
@@ -425,13 +426,11 @@ main {
     display: inline-block;
     justify-content: space-between;
     font-family: var(--font-texto);
-    color: #545454;   
-    border: #0cf01f 1px solid;   
+    color: #545454;    
 } 
 
 .cosmos-sobre-txt p {
     padding: 10px 5px;
-    border: #0f3f8b 1px solid;
 }
 
 @media (max-width: 999px) {
@@ -458,13 +457,11 @@ main {
     text-align: center;
     height: 200px;
     padding-top: 70px;
-    border: #f00ce5 1px solid;
 }
 
 #cosmos-projects-img{
     width: 95vw;     
     margin:auto;  
-    border: #373435 1px solid; 
 }
 
 .cosmos-projects-obra{  
@@ -509,8 +506,7 @@ main {
     width: 100%;
     position: absolute;
     transition: 1.3s;
-    padding: 2em;
-    border: #373435 15px solid;    
+    padding: 2em;  
 }
 
 .project-img a {
@@ -548,8 +544,7 @@ main {
 
     .project-one:hover .second {        
         font-size: 30px;        
-        padding: 1.5em;
-        border: #373435 10px solid;    
+        padding: 1.5em;  
     }
    
 }
@@ -571,7 +566,6 @@ footer {
     width: 500px;
     margin: auto;
     text-align: center;
-    border: #f00ce5 1px solid;
 }
 
 .footer-logo-img {
@@ -591,12 +585,10 @@ footer {
     font-size: 25px;
     width: 100%;
     margin-top: -60px;
-    border: #f0f1f1 1px solid;
 }
 
 .footer-logo-div {
     margin-top: 30px;
-    border: #0cbbf0 1px solid;
 }
 
 .footer-logo-cont  {   
@@ -606,14 +598,12 @@ footer {
     font-size: 12px;
     padding: .5em 0; 
     text-transform: lowercase;  
-    border: #0cbbf0 1px solid;
 }
 
 footer a {
     text-decoration: none ;
     color: white;
     font-weight: bolder;
-    border: #0cf01f 1px solid;
 }
 
 footer a:hover {
@@ -663,7 +653,6 @@ footer a:hover {
 }
 
 .cosmos-dev {
-    border: #54f00c 1px solid;
     width: 100%;
 }
 
