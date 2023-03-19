@@ -291,10 +291,39 @@ article {
 
 .cosmos-works{
     width: 100vw;
-    padding-bottom: 10px;
-    padding-top: 80px;
-    padding-left: 80px;
+    display: flex;   
+    object-fit: cover;  
+    justify-content: space-between; /* Add this property to evenly space the nested divs */
+    border: #0f3f8b 1px solid;
 }
+
+.cosmos-works-det1, .cosmos-works-det2, .cosmos-works-det3 {
+    width: 33%;
+    height: 190px;
+    align-items: flex-start; /* alinhado no topo */
+    border: #373435 solid 1px;
+}
+
+.cosmos-works-det1 img, .cosmos-works-det2 img, .cosmos-works-det3 img{
+    width: 40%;
+    height: 50%;
+    margin-top: 0; /* remova o espaço em branco superior */
+    margin-bottom: 30%; /* empurre a imagem para o topo */
+    margin-left: 30%; /* centralize horizontalmente */
+   
+    border: #0cbbf0 1px solid;
+}
+
+@media only screen and (max-width: 768px) {
+    .cosmos-works {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .cosmos-works-det1, .cosmos-works-det2, .cosmos-works-det3 {
+      width: 100%;
+    }
+  }
 
 @media (max-width: 999px) {
     .apresentacao{
