@@ -193,6 +193,72 @@ nav {
 
 
 
+
+
+.slider-down {
+    height: 70px;
+    width: 60px;
+    z-index: 10;
+    position: absolute;
+    display: inline-block;
+    padding: 10px;   
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%) translateY(50%); /* Centraliza verticalmente */
+    bottom: 50px; /* Define a margem inferior como 0 */     
+}
+
+.slider-down-arrow, .slider-down-arrow1, .slider-down-arrow2 {     
+    position: absolute; /* Define a posição absoluta */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%) translateY(50%); /* Centraliza verticalmente */
+    bottom: 40px; /* Define a margem inferior como 0 */     
+    animation: blink 1.6s infinite;   
+  }
+ 
+  .slider-down-arrow1 {
+    bottom: 50px; /* Define a margem inferior como 0 */    
+    animation: blink 1.5s infinite; 
+  }
+
+  .slider-down-arrow2 {
+    bottom: 60px; /* Define a margem inferior como 0 */    
+    animation: blink 1.4s infinite; 
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .slider-down-arrow i, .slider-down-arrow1 i, .slider-down-arrow2 i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 3px 3px 0 0;
+    color: #ffffff;
+    transform: rotate(135deg);
+    transition: all 0.5s ease-in-out;
+  }
+
+ 
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
 .nav-list.active {
     transform: translateX(0);
 }
@@ -247,7 +313,7 @@ article {
 }
 
 
-.apresentacao{
+#apresentacao{
     width: 100vw;
     padding-bottom: 10px;
     background-color: var(--cor2);
@@ -255,7 +321,7 @@ article {
     padding-left: 80px;
 }
 
-.apresentacao h2 {
+#apresentacao h2 {
     font-family: 'Open Sans',sans-serif;
     color: #fff;
     font-weight: 300;
@@ -284,34 +350,50 @@ article {
 .apresentacao-det3 p {
     font-family: 'Open Sans',sans-serif;
     color: #fff;
-    font-weight: 300;
-  
+    font-weight: 300;  
     width: 500px;
 }
 
 .cosmos-works{
+    margin-top: 40px;
     width: 100vw;
     display: flex;   
     object-fit: cover;  
     justify-content: space-between; /* Add this property to evenly space the nested divs */
-    border: #0f3f8b 1px solid;
+    
 }
 
 .cosmos-works-det1, .cosmos-works-det2, .cosmos-works-det3 {
-    width: 33%;
-    height: 190px;
+    width: 33%;    
     align-items: flex-start; /* alinhado no topo */
-    border: #373435 solid 1px;
 }
 
 .cosmos-works-det1 img, .cosmos-works-det2 img, .cosmos-works-det3 img{
     width: 40%;
-    height: 50%;
+    height: 90px;
     margin-top: 0; /* remova o espaço em branco superior */
-    margin-bottom: 30%; /* empurre a imagem para o topo */
-    margin-left: 30%; /* centralize horizontalmente */
-   
-    border: #0cbbf0 1px solid;
+    margin-left: 30%; /* centralize horizontalmente */   
+    
+}
+
+.cosmos-works-det-txt {
+    width: 95%;
+    margin:5px;
+}
+
+.cosmos-works-det-txt p {
+    margin-top: 20px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;  
+
+}
+
+.cosmos-works-txt {
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 250;
+    text-transform: uppercase;
+    font-size: 25px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -326,24 +408,24 @@ article {
   }
 
 @media (max-width: 999px) {
-    .apresentacao{
+    #apresentacao{
         padding-top: 50px;
         padding-left: 5px;    
     }
 
-    .apresentacao-det1 p {
-       border: #0cbbf0 solid 1px;
+    #apresentacao-det1 p {
+     
     }
     
-    .apresentacao h2 {
+    #apresentacao h2 {
        width: 100%;
     }
         
-    .apresentacao-det2 {
+    #apresentacao-det2 {
         width: 40%;       
     }
     
-    .apresentacao-det3 p {
+    #apresentacao-det3 p {
         padding: 0 2px;
         width: 100%;
     }
@@ -435,10 +517,10 @@ main {
 
 
 
-#cosmos-sobre {     
-    width: 95vw;    
+#cosmos-sobre {    
+    width: 100vw;    
     margin: auto;      
-    padding-top: 3em;      
+    padding-top: 8em;      
 }
 
 .cosmos-sobre-nome {
