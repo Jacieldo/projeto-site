@@ -191,20 +191,18 @@ nav {
     }   
 }
 
-
-
-
-
 .slider-down {
-    height: 70px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     z-index: 10;
     position: absolute;
     display: inline-block;
     padding: 10px;   
     left: 50%; /* Centraliza horizontalmente */
     transform: translateX(-50%) translateY(50%); /* Centraliza verticalmente */
-    bottom: 50px; /* Define a margem inferior como 0 */     
+    bottom: 90px; /* Define a margem inferior como 0 */     
+    border-radius: 50%;
+    background-color: #c1815969;
 }
 
 .slider-down-arrow, .slider-down-arrow1, .slider-down-arrow2 {     
@@ -213,25 +211,25 @@ nav {
     transform: translateX(-50%) translateY(50%); /* Centraliza verticalmente */
     bottom: 40px; /* Define a margem inferior como 0 */     
     animation: blink 1.6s infinite;   
-  }
+}
  
-  .slider-down-arrow1 {
+.slider-down-arrow1 {
     bottom: 50px; /* Define a margem inferior como 0 */    
     animation: blink 1.5s infinite; 
-  }
+}
 
-  .slider-down-arrow2 {
+.slider-down-arrow2 {
     bottom: 60px; /* Define a margem inferior como 0 */    
     animation: blink 1.4s infinite; 
-  }
+}
 
-  @keyframes blink {
+@keyframes blink {
     50% {
       opacity: 0;
     }
-  }
+}
   
-  .slider-down-arrow i, .slider-down-arrow1 i, .slider-down-arrow2 i {
+.slider-down-arrow i, .slider-down-arrow1 i, .slider-down-arrow2 i {
     display: block;
     width: 30px;
     height: 30px;
@@ -241,20 +239,7 @@ nav {
     color: #ffffff;
     transform: rotate(135deg);
     transition: all 0.5s ease-in-out;
-  }
-
- 
-  
-  
-  
-  
-  
-
-
-
-
-
-
+}
 
 
 
@@ -400,6 +385,7 @@ article {
     .cosmos-works {
       flex-direction: column;
       height: auto;
+      width: auto;
     }
     
     .cosmos-works-det1, .cosmos-works-det2, .cosmos-works-det3 {
@@ -412,17 +398,16 @@ article {
         padding-top: 50px;
         padding-left: 5px;    
     }
-
-    #apresentacao-det1 p {
-     
-    }
     
     #apresentacao h2 {
-       width: 100%;
+        border: #0f3f8b solid 1px;
+        width: 100%;
+       
     }
         
     #apresentacao-det2 {
-        width: 40%;       
+        width: 40%; 
+        border: #8b280f solid 1px;      
     }
     
     #apresentacao-det3 p {
