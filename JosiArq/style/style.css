@@ -425,8 +425,7 @@ article {
         width: 300px;
         float: left;
         display: inline-block;
-        justify-content: space-between;      
-                 
+        justify-content: space-between;                     
     }
 
     .photoDetails1 {
@@ -488,12 +487,26 @@ main {
     display: inline-block;    
 }
 
-
-
 #cosmos-sobre {    
     width: 100vw;    
     margin: auto;      
     padding-top: 8em;      
+}
+
+@media (max-width: 999px) {    
+    .cosmos-sobre-img1 {
+        border-radius: 50%;  
+        height: 200px; 
+        width: 200px;   
+       
+    }
+
+    .cosmos-sobre-img {            
+        height: 200px; 
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;                
+    }
 }
 
 .cosmos-sobre-nome {
@@ -548,15 +561,10 @@ main {
     margin:auto;  
 }
 
-#items {
-    background-color: #d7d8dd;
-}
-
 .cosmos-projects-obra{  
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border: #e70808 1px solid;   
 }
 
 .project-img {
@@ -684,9 +692,10 @@ footer {
     width: 100%; 
     margin-right: 0.3em;
     color: #fff;
-    font-size: 12px;
+    font-size: 15px;
     padding: .5em 0; 
-    text-transform: lowercase;  
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 footer a {
@@ -762,8 +771,7 @@ footer a:hover {
         max-width: 300px;       
     }
 
-    .logo-img {
-        
+    .logo-img {        
         width: 80%;
         height: 80%;
     }
