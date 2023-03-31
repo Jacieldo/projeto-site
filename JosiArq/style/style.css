@@ -200,7 +200,7 @@ nav {
     padding: 10px;   
     left: 50%; /* Centraliza horizontalmente */
     transform: translateX(-50%) translateY(50%); /* Centraliza verticalmente */
-    bottom: 90px; /* Define a margem inferior como 0 */     
+    bottom: 110px; /* Define a margem inferior como 0 */     
     border-radius: 50%;
     background-color: #c1815969;
 }
@@ -210,17 +210,14 @@ nav {
     left: 50%; /* Centraliza horizontalmente */
     transform: translateX(-50%) translateY(50%); /* Centraliza verticalmente */
     bottom: 40px; /* Define a margem inferior como 0 */     
-    animation: blink 1.6s infinite;   
+    animation: blink 1.3s infinite;   
 }
  
-.slider-down-arrow1 {
-    bottom: 50px; /* Define a margem inferior como 0 */    
-    animation: blink 1.5s infinite; 
-}
+
 
 .slider-down-arrow2 {
     bottom: 60px; /* Define a margem inferior como 0 */    
-    animation: blink 1.4s infinite; 
+    animation: blink 1.1s infinite; 
 }
 
 @keyframes blink {
@@ -229,7 +226,7 @@ nav {
     }
 }
   
-.slider-down-arrow i, .slider-down-arrow1 i, .slider-down-arrow2 i {
+.slider-down-arrow i, .slider-down-arrow2 i {
     display: block;
     width: 30px;
     height: 30px;
@@ -345,12 +342,13 @@ article {
     display: flex;   
     object-fit: cover;  
     justify-content: space-between; /* Add this property to evenly space the nested divs */
-    
+    border: #0f3f8b 1px solid;   
 }
 
 .cosmos-works-det1, .cosmos-works-det2, .cosmos-works-det3 {
     width: 33%;    
     align-items: flex-start; /* alinhado no topo */
+    border: #288b0f 1px solid;   
 }
 
 .cosmos-works-det1 img, .cosmos-works-det2 img, .cosmos-works-det3 img{
@@ -386,10 +384,12 @@ article {
       flex-direction: column;
       height: auto;
       width: auto;
+      border: #0f3f8b 1px solid; 
     }
     
     .cosmos-works-det1, .cosmos-works-det2, .cosmos-works-det3 {
       width: 100%;
+      border: #288b0f 1px solid;   
     }
   }
 
@@ -399,20 +399,15 @@ article {
         padding-left: 5px;    
     }
     
-    #apresentacao h2 {
-        border: #0f3f8b solid 1px;
-        width: 100%;
-       
+    .apresentacao h2 {
+        width: 100%;       
     }
         
-    #apresentacao-det2 {
-        width: 40%; 
-        border: #8b280f solid 1px;      
-    }
     
-    #apresentacao-det3 p {
-        padding: 0 2px;
-        width: 100%;
+    
+    .apresentacao-det3 p {        
+      
+        border: #0f3f8b 1px solid;
     }
 }
 
@@ -543,7 +538,8 @@ main {
 }
 
 .cosmos-projects {    
-    width: 100vw;     
+    width: 100vw; 
+    border: #288b0f 1px solid;       
 }
 
 .projetos-cosmos-projects {
@@ -558,12 +554,18 @@ main {
 #cosmos-projects-img{
     width: 95vw;     
     margin:auto;  
+    border: #d8e709 1px solid;   
+}
+
+#items {
+    background-color: #d7d8dd;
 }
 
 .cosmos-projects-obra{  
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    border: #e70808 1px solid;   
 }
 
 .project-img {
