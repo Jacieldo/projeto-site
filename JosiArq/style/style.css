@@ -342,13 +342,11 @@ article {
     display: flex;   
     object-fit: cover;  
     justify-content: space-between; /* Add this property to evenly space the nested divs */
-    border: #0f3f8b 1px solid;   
 }
 
 .cosmos-works-det1, .cosmos-works-det2, .cosmos-works-det3 {
     width: 33%;    
-    align-items: flex-start; /* alinhado no topo */
-    border: #288b0f 1px solid;   
+    align-items: flex-start; /* alinhado no topo */  
 }
 
 .cosmos-works-det1 img, .cosmos-works-det2 img, .cosmos-works-det3 img{
@@ -384,12 +382,10 @@ article {
       flex-direction: column;
       height: auto;
       width: auto;
-      border: #0f3f8b 1px solid; 
     }
     
     .cosmos-works-det1, .cosmos-works-det2, .cosmos-works-det3 {
-      width: 100%;
-      border: #288b0f 1px solid;   
+      width: 100%;  
     }
   }
 
@@ -535,8 +531,7 @@ main {
 }
 
 .cosmos-projects {    
-    width: 100vw; 
-    border: #288b0f 1px solid;       
+    width: 100vw;      
 }
 
 .projetos-cosmos-projects {
@@ -551,7 +546,6 @@ main {
 #cosmos-projects-img{
     width: 95vw;     
     margin:auto;  
-    border: #d8e709 1px solid;   
 }
 
 #items {
@@ -633,7 +627,9 @@ main {
         width: 300px; 
     }
 
-
+    .cosmos-projects-obra{  
+       width: 95vw;
+    } 
 
     .project-one:hover .second {        
         font-size: 30px;        
