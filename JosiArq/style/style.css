@@ -401,13 +401,10 @@ article {
     
     .apresentacao h2 {
         width: 100%;       
-    }
-        
+    }    
     
-    
-    .apresentacao-det3 p {        
-      
-        border: #0f3f8b 1px solid;
+    .apresentacao-det3 p { 
+        width: 96vw;       
     }
 }
 
@@ -636,9 +633,7 @@ main {
         width: 300px; 
     }
 
-    .cosmos-projects-obra{  
-       width: 100vw;
-    } 
+
 
     .project-one:hover .second {        
         font-size: 30px;        
