@@ -655,7 +655,7 @@ footer {
     text-align: center;
     font-size: .8em;
     width: 100vw;
-    height: 400px;
+    height: 410px;
 }
 
 .footer-logo {
@@ -750,9 +750,38 @@ footer a:hover {
     height: 80%;
 }
 
+
+
 .cosmos-dev {
+    margin-top: 20px;
+    display: inline-block;
     width: 100%;
+    height: 110px;
+    background-color:  #707070;
+    color: #ffffff;
+  
 }
+
+.cosmos-dev-direitos {
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    margin-top: 45px;  
+    display: inline-block;
+    float: left;
+    margin-left: 30px;  
+}
+
+.cosmos-dev-contatos {
+    display: inline-block;
+    height: 60px;
+    width: 160px;
+    display: inline-block;
+    float: right;
+    margin-right: 10%;
+    margin-top: 25px;
+}
+
+
 
 @media (max-width: 999px) {
     .footer-logo {
