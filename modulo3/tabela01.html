@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        table{            
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        tr.linha {
+            background-color: aquamarine;
+        }
+
+        td.marcado {
+            background-color: yellow;
+        }
+
+        td{
+            border: 1px solid black; 
+            padding: 8px;
+            text-align: cente; /* Alinhamento horizontal */
+            vertical-align: top; /* Alinhamento vertical */
+        }
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeira Tabela</h1>
+    <table>
+        <!--
+            HIERARQUIA DE TABELAS (simples)
+            TABLE ROW (TR)= linha de tabela
+                TABLE HEADER (TH) = cabeçalho da tabela
+                TABLE DATA (TD)= dado de tabela
+        -->
+        <tr><!-- PRIMEIRA LINHA-->
+            <td>A1</td>
+            <td>B1</td>
+            <td class="numero">C1</td> <!-- O Excel sempre usa o número na direita, quando não, na esquerda-->
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="marcado">C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
