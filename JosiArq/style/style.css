@@ -295,6 +295,11 @@ article {
     width: 100vw;
 }
 
+main {
+    position: sticky;
+    top: 13vh; /* Define o deslocamento para não sobrepor a primeira div */
+}
+
 
 #apresentacao{
     width: 100vw;
@@ -404,6 +409,10 @@ article {
         width: 96vw;       
     }
 }
+
+
+    
+
 
 @media (min-width: 1000px) {
     main p {
