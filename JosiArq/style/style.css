@@ -737,7 +737,7 @@ footer a:hover {
 .cosmos-footer {
     display: flex;
     margin: auto;    
-    height: 80px;
+    height: 110px;
     width: 190px;
 }
 
@@ -745,14 +745,8 @@ footer a:hover {
     padding: 15px;
 }
 
-.cosmos-footer img {   
-    display: inline-block;
-    width: 100%;
-    height: 80%;
-}
-
 .cosmos-dev {
-    margin-top: 20px;
+   
     display: inline-block;
     width: 100%;
     min-height: 110px;
