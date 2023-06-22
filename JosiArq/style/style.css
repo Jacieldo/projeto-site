@@ -756,10 +756,10 @@ footer a:hover {
     margin-top: 20px;
     display: inline-block;
     width: 100%;
-    height: 110px;
+    min-height: 110px;
     background-color:  #707070;
     color: #ffffff;
-  
+    border: 1px solid black;  
 }
 
 .cosmos-dev-direitos {
@@ -769,16 +769,19 @@ footer a:hover {
     display: inline-block;
     float: left;
     margin-left: 30px;  
+    border: 1px solid black; 
 }
 
 .cosmos-dev-contatos {
     display: inline-block;
-    height: 60px;
-    width: 160px;
+    height: 110px;
+    width: 200px;
     display: inline-block;
-    float: right;
-    margin-right: 10%;
-    margin-top: 25px;
+    float: right;    
+    background-image: url('../imagens/42TREELOGO9.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 
 
@@ -803,5 +806,14 @@ footer a:hover {
     .logo-img {        
         width: 80%;
         height: 80%;
+    }
+
+    .cosmos-dev-direitos {      
+        margin-top: none;  
+    }    
+
+    .cosmos-dev-contatos {
+        float: none;  
+        background-repeat: no-repeat;  
     }
 }
