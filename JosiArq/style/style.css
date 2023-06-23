@@ -28,7 +28,7 @@
 
 :root {
     --cor0: #0f3f8b;
-    --cor1: #c1815960;
+    --cor1: #c18159ce;
     --cor2: #c18159d2;
     --cor3: #373435;
     --fonte-padrao: "Montserrat", Helvetica, Arial, sans-serif;
@@ -109,7 +109,10 @@ nav {
 
 .nav-list {
     list-style: none;
-    display: flex;     
+    display: flex;  
+    font-family: var(--fonte-destaque);  
+    font-weight: 350; 
+    font-size: bolder;    
 }
 
 .nav-list li {
@@ -295,17 +298,14 @@ article {
     width: 100vw;
 }
 
-main {
-    position: sticky;
-    top: 13vh; /* Define o deslocamento para não sobrepor a primeira div */
-}
+
 
 
 #apresentacao{
     width: 100vw;
     padding-bottom: 10px;
     background-color: var(--cor2);
-    padding-top: 80px;
+    padding-top: 14vh;
     padding-left: 80px;
 }
 
@@ -531,8 +531,9 @@ main {
 .cosmos-sobre-txt {     
     float: left;
     display: inline-block;
-    justify-content: space-between;
-    font-family: var(--font-texto);
+    justify-content: space-between;    
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 350; 
     color: #545454;    
 } 
 
@@ -665,7 +666,7 @@ footer {
     text-align: center;
     font-size: .8em;
     width: 100vw;
-    height: 410px;
+    height: 360px;
 }
 
 .footer-logo {
