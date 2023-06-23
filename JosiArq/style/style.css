@@ -664,22 +664,24 @@ footer {
     background-color: var(--cor3);
     color: white;
     text-align: center;
-    font-size: .8em;
+    font-size: 0.8em;
     width: 100vw;
     height: 360px;
 }
 
 .footer-logo {
-    height: 250px;
+   
+    height: 340px;
     width: 500px;
     margin: auto;
-    text-align: center;
+    
 }
 
 .footer-logo-img {
     height: 200px;
     width: 300px; 
     margin: auto;
+ 
 }
 
 .logo-img {
@@ -701,10 +703,9 @@ footer {
 
 .footer-logo-cont  {   
     width: 100%; 
-    margin-right: 0.3em;
     color: #fff;
     font-size: 15px;
-    padding: .5em 0; 
+    padding: .2em 0; 
     font-family: 'Open Sans', sans-serif;
     
 }
@@ -731,6 +732,7 @@ footer a:hover {
     font-size: 30px;
     padding: .5em 0;   
     margin-top: 10px;
+    padding-top: 0;
 }
 
 .iconfont.insta:before {
@@ -746,20 +748,19 @@ footer a:hover {
 }
 .cosmos-footer {
     display: flex;
-    margin: auto;    
-    height: 110px;
+    margin: 15px auto;    
+   
     width: 190px;
 }
 
 .cosmos-footer a {
-    padding: 15px;
+    padding: 0 15px;  
 }
 
-.cosmos-dev {
-   
+.cosmos-dev {  
     display: inline-block;
     width: 100%;
-    min-height: 110px;
+    max-height: 90px;
     background-color:  #707070;
     color: #ffffff; 
 }
@@ -767,7 +768,7 @@ footer a:hover {
 .cosmos-dev-direitos {
     font-family: var(--fonte-padrao);
     font-size: 1.1em;
-    margin-top: 45px;  
+    margin-top: 35px;  
     display: inline-block;
     float: left;
     margin-left: 30px;  
@@ -775,7 +776,7 @@ footer a:hover {
 
 .cosmos-dev-contatos {
     display: inline-block;
-    height: 110px;
+    height: 90px;
     width: 200px;
     display: inline-block;
     float: right;    
@@ -783,6 +784,7 @@ footer a:hover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    border: 1px solid #fff;
 }
 
 
@@ -811,12 +813,17 @@ footer a:hover {
 
     .cosmos-dev-direitos {      
         margin-top: none;  
-    }    
+    }   
+    
+    .cosmos-dev {  
+        max-height: 120px;
+    }
 
     .cosmos-dev-contatos {
         float: none;  
-        background-repeat: no-repeat;  
-        height: 90px;
-        width: 170px;
+        height: 50px;
+        width: 150px;
     }
+
+   
 }
