@@ -4,38 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento Vertical</title>
-    <style>
-    #container{
-        background-image: url('imagens-cap19/target001.png');
-        background-size: 100% 100%;
-        position: relative; /*todo posicionamento padrão de um boxer já é relativo por padrão */
-        height: 500px;
-        background-color: purple;
-        padding: 10px;
-    }
+    <style> 
+        #container{
+            background-image: url(imagens-cap19/target001.png);
+            background-size: 100% 100%;
 
-    #conteudo{
-        background-image: url('imagens-cap19/target001.png');
-        background-size: 100% 100%;
-        position: absolute; /* O que tá dentro de que o contem será absoluto. Assim vc poderá configurar as propriedades de "left" e "top" isso com relação ao boxer que o contem */
-        height: 200px;
-        width: 400px;
-        background-color: yellow;
+           height: 500px; 
+           background-color: purple;
+           padding: 10px;
 
-        left: 50%;
-        top: 50%; /* O top e o left levam o canto superior esquerdo para as dimensões ditas */
-        transform: translate(-50%, -50%); /* Diminui o tamanho do movimento mas da div(boxer) no tamanho determinado */
-   
-    }
+           /* PARA CENTRALIZAÇÃO VERTICAL */
+           position: relative; /* Todo boxer por padrão HTML já é relativo */
+        }
+
+        #conteudo {
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url(imagens-cap19/target001.png);
+            background-size: 100% 100%;
+          /*  margin: auto;  Faz a centralização horizontal do conteúdo */   
+          
+          /* PARA CENTRALIZAÇÃO VERTICAL */
+          position: absolute; /* o que faz poder configurar o boxer de dentro do container, centralizado verticalmente */
+          left: 50%; /*Pode ser configurado por causa do position absolut */
+          top: 50%;
+
+          /* PARA CENTRALIZAR O CENTRO DO CONTEUDO COM O CENTRO DO CONTAINER */
+          transform: translate(-50%, -50%);
+        }
 
     </style>
+
 </head>
-<body>
+<body><!--Quando vai fazer a centralização vertical, você tem que ter um "container" e um "conteudo"-->
     <section id="container">
         <article id="conteudo">
 
         </article>
-
     </section>
     
 </body>

@@ -3,43 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo 06</title>
+    <title>Alinhamento Vertical</title>
     <style>
-        body{
-            height: 100vh; /*
-            background-color: black;
-            background-image: url('imagens-cap19/wallpaper002.jpg');
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover;  content
-            background-attachment: fixed; */
+    #container{
+        background-image: url('imagens-cap19/target001.png');
+        background-size: 100% 100%;
+        position: relative; /*todo posicionamento padrão de um boxer já é relativo por padrão */
+        height: 500px;
+        background-color: purple;
+        padding: 10px;
+    }
 
-            /* shorthand - background
-              color > image > position > repeat > (size) > attachmant */  
+    #conteudo{
+        background-image: url('imagens-cap19/target001.png');
+        background-size: 100% 100%;
+        position: absolute; /* O que tá dentro de que o contem será absoluto. Assim vc poderá configurar as propriedades de "left" e "top" isso com relação ao boxer que o contem */
+        height: 200px;
+        width: 400px;
+        background-color: yellow;
 
-            background: black url('imagens-cap19/wallpaper002.jpg') center center no-repeat fixed; /* resulmo de todas as declarações anteriores */
-            background-size: cover; /* A w3c diz que o size cabe na declaração resumida, mas não funciona então tem que coloca-la por fora */
+        left: 50%;
+        top: 50%; /* O top e o left levam o canto superior esquerdo para as dimensões ditas */
+        transform: translate(-50%, -50%); /* Diminui o tamanho do movimento mas da div(boxer) no tamanho determinado */
+   
+    }
 
-
-        }
-        main {
-            background-color: white;
-            max-width: 400px;
-            padding: 10px;
-            margin: auto;
-            border: 1px solid darkblue;
-            border-radius: 15px;
-        }
     </style>
 </head>
 <body>
-    <main>
-        <h1>Teste de Fundo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At esse molestias nisi reiciendis! Ab earum laudantium accusantium sunt quidem eligendi, culpa libero eos modi, labore sapiente laborum molestiae iure vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eos natus delectus! Ut repudiandae voluptate totam, esse, in, earum ea cupiditate nisi eum ex eos enim hic voluptas? Accusamus, a!Lorem
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quod cum molestiae, nobis, cumque dolor animi autem voluptatem deleniti doloremque non. Aliquid sequi, maxime ab vel incidunt fugit magnam delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt illo nobis corrupti beatae, praesentium quisquam tenetur nisi sit libero similique placeat incidunt sapiente asperiores unde ea non nostrum dolore eveniet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quos voluptates ea in fuga quia repellendus praesentium iure quas repellat blanditiis adipisci delectus, culpa, quo officiis non temporibus suscipit. Incidunt?
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, expedita neque accusamus corrupti molestias quod voluptatum officia. Vero dicta veniam dolorum dolor animi exercitationem, magnam nemo non qui, tempore nulla.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos mollitia repellat, pariatur enim adipisci accusantium consectetur omnis voluptas minima eius quo explicabo ab laboriosam molestiae. Qui dicta aliquid recusandae nobis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione rerum aut, assumenda delectus quasi exercitationem enim hic explicabo laboriosam, dignissimos incidunt dolore natus accusamus! Distinctio provident cupiditate eos dolores. Adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quis natus obcaecati animi, consequuntur nihil neque eveniet quo corrupti! Quisquam molestias officia fuga mollitia in asperiores assumenda fugit ea cum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui iure maxime id voluptatem at quis a quisquam dignissimos placeat in expedita officia est tempora suscipit, eius, officiis blanditiis ut.
-        </p>
-    </main>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+
+    </section>
     
 </body>
 </html>
