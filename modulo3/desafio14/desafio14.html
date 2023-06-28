@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 14 </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border: collapse;
+            width: 800px;
+        }
+
+        th {
+            background-color: rgb(144, 143, 146);
+            color: white;
+        }
+
+        #forte {
+            background-color: white;
+            font-weight: bolder;
+            color: black;
+        }
+
+        .marE {
+            text-align: left;
+        }
+
+        td, th {
+            border: 1px black solid;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Tabela do Desafio 14</h1>
+    <caption>Notas</caption>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplina</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="forte" rowspan="4">Exatas</th>
+                <td class="marE">Matemática</td>
+                <td>0.0</td>
+                <td>1.0</td>
+                <td>0.5</td>
+            </tr>
+            <tr>
+                <td class="marE">Física</td>
+                <td>1.0</td>
+                <td>2.0</td>
+                <td>1.5</td>
+            </tr>
+            <tr>
+                <td class="marE">Química</td>
+                <td>2.0</td>
+                <td>3.0</td>
+                <td>2.5</td>
+            </tr>
+            <tr>
+                <td class="marE">Biologia</td>
+                <td>3.0</td>
+                <td>4.0</td>
+                <td>3.5</td>
+            </tr>
+            <tr>
+                <th class="marE" colspan="4">Média Exatas</th>
+                <th>2.0</th>
+            </tr>
+            <tr>
+                <th id="forte" rowspan="2">Humanas</th>
+                <td class="marE">História</td>
+                <td>0.0</td>
+                <td>1.0</td>
+                <td>0.5</td>
+            </tr>
+            <tr>
+                <td class="marE">Geografia</td>
+                <td>1.0</td>
+                <td>2.0</td>
+                <td>1.5</td>
+            </tr>
+
+            <tr>
+                <th class="marE" colspan="4">Média Humanas</th>
+                <th>2.0</th>
+            </tr>
+
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
