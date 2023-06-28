@@ -118,6 +118,8 @@ nav {
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+    color: #fff;
+    font-weight: bolder;
    
 }
 
@@ -784,7 +786,6 @@ footer a:hover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    border: 1px solid #fff;
 }
 
 
