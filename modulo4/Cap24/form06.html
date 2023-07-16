@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Formulários</title>
+</head>
+<body>
+    <h1>Exemplos de Formulários</h1>
+
+    <form action="cadastro.html" method="post" autocomplete="on">
+        <p>
+            <label for="iestado">Estado:</label>
+
+            <select name="Estado" id="iestado">
+                <option value="" selected>--Selecione--</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="PI">Piauí</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprofissao">Profissão</label>
+            <input type="text" name="profissao" id="iprofissao" list="listprofi">
+            <datalist id="iprofissao">
+                <option value="">Administrador</option>
+                <option value="">Desenvolvedor</option>
+                <option>Engenheiro</option>
+                <option value="">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
