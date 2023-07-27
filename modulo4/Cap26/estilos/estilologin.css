@@ -33,6 +33,7 @@ section#login {
 }
 
 section#login  > div#imagem {
+    display: block;
     background-color: rgb(43, 61, 226) url(../../42tree3.png);
     background-size: cover;
     height: 200px;
@@ -40,5 +41,6 @@ section#login  > div#imagem {
 }
 
 section#login > div#formulario {
+    display: block;
     padding: 10px;
 }
